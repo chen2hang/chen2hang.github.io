@@ -66,9 +66,9 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  icon                   : qq # Person or Organization (defaults to Person)
-  icon_pack              : fas # If the user or organization name differs from the site's name
-  link: https://wpa.qq.com/msgrd?v=3&uin=654838468&site=qq&menu=yes # An array of links to social media profiles
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
   
 
 
@@ -87,7 +87,7 @@ author:
   location         : "China"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : #"http://yourfullgooglescholarurl.com"
+  googlescholar    : https://scholar.google.com/citations?user=7CkE3C4AAAAJ&hl=en&oi=sra
   email            : u3567831@connect.hku.hk
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
