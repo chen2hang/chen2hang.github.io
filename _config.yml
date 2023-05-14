@@ -68,7 +68,8 @@ og_image                 :  # Open Graph/Twitter default site image
 social:
   icon                   : "QQ" # Person or Organization (defaults to Person)
   icon_pack              : "fa-qq" # If the user or organization name differs from the site's name
-  username: 654838468 # An array of links to social media profiles
+  number: # An array of links to social media profiles
+  
 
 
 # Analytics
@@ -94,7 +95,7 @@ author:
   codepen          :
   dribbble         :
   flickr           : 
-  facebook         : 654838468
+  facebook         : 
   foursquare       :
   github           : https://github.com/chen2hang #just need  user id
   google_plus      :
@@ -115,6 +116,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  social           : 654838468
 
 
 # Reading Files
