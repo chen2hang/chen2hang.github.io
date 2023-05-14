@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Chen Zhang (张晨)"
-  avatar           : "profile.png"
+  avatar           : "profile_img.png"
   bio              : "Machine learning, machine teaching."
   location         : "China"
   employer         :
@@ -89,7 +89,7 @@ author:
   googlescholar    : "http://yourfullgooglescholarurl.com"
   email            : u3567831@connect.hku.hk
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : https://chen2hang.github.io/
   bitbucket        :
   codepen          :
   dribbble         :
