@@ -66,9 +66,9 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-- icon                   : "QQ" # Person or Organization (defaults to Person)
-  icon_pack              : "fa-qq" # If the user or organization name differs from the site's name
-  number: # An array of links to social media profiles
+  icon                   : qq # Person or Organization (defaults to Person)
+  icon_pack              : fas # If the user or organization name differs from the site's name
+  link: https://wpa.qq.com/msgrd?v=3&uin=654838468&site=qq&menu=yes# An array of links to social media profiles
   
 
 
