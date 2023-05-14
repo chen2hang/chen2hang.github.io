@@ -29,7 +29,8 @@ Nonparametric Iterative Machine Teaching
 <span style="color:red; font-style:italic;">ICML 2023</span>
 
 Honors
-======  
+======
+
 Scholarship
 ------
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
