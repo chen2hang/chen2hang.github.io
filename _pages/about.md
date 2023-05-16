@@ -16,7 +16,7 @@ Before pursuing graduate studies, I completed my undergraduate education in Appl
 
 I am always passionate about applying statistical and machine learning techniques to real-world problems and contributing to the advancement of artificial intelligence and statistics. I firmly believe that [hard work will always pay off](https://en.wikipedia.org/wiki/Achievement_ideology), and as long as we keep moving forward, we will eventually see the light at the end of the tunnel.
 
-You can find my CV here: [Johnsn's Curriculum Vitae](../assets/Curriculum_Vitae.pdf), and I am available through [Email](u3567831@connect.hku.hk) / [QQ](../images/qq.png). Please feel free to contact me using any of these methods if you have any questions, feedback, or opportunities you'd like to discuss.
+I am available through [Email](u3567831@connect.hku.hk) / [QQ](../images/qq.png). Please feel free to contact me using any of these methods if you have any questions, feedback, or opportunities you'd like to discuss.  <!-- You can find my CV here: [Johnsn's Curriculum Vitae](../assets/Curriculum_Vitae.pdf), and  -->
 
 Moments
 ======
