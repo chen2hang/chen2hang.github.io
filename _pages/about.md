@@ -18,10 +18,6 @@ I am always passionate about applying statistical and machine learning technique
 
 I am available through [Email](u3567831@connect.hku.hk) / [QQ](../images/qq.png). Please feel free to contact me using any of these methods if you have any questions, feedback, or opportunities you'd like to discuss.  <!-- You can find my CV here: [Johnsn's Curriculum Vitae](../assets/Curriculum_Vitae.pdf), and  -->
 
-Moments
-======
-I'm happy that my work "Nonparametric Iterative Machine Teaching" is accepted by ICML 2023
-
 Publications
 ======
 Nonparametric Iterative Machine Teaching  
