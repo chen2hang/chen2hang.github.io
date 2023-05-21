@@ -34,19 +34,19 @@ Honors
 Scholarship
 ------
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
-- The First/Second/Third Prize Scholarship	[Jun 2017/ Jun 2016/ Nov 2017]  
+<!-- - The First/Second/Third Prize Scholarship	[Jun 2017/ Jun 2016/ Nov 2017]  
 - Innovation and Entrepreneurship Scholarship 	[Jun 2017]
 
 Prize
 ------
 - The Second Prize of the Hebei Province Second College Students Innovation and Entrepreneurship Education Annual Conference and "Innovation +" Education Summit Forum	[Jul 2017]  
 - The First Prize of the "Challenge Cup" Hebei University Students Extracurricular Academic Science and Technology Works Competition	[Jun 2017]  
-- The Third Prize of Hebei Province Mathematics Contest 	[Oct 2016]
+- The Third Prize of Hebei Province Mathematics Contest 	[Oct 2016]-->
 
 Certificate
 ------
 - Excellent Graduate of Hebei Province	[May 2019]  
 - Top Ten College Students of NU	[May 2018]  
-- Excellent Youth League Cadre 	[May 2017]  
+<!-- - Excellent Youth League Cadre 	[May 2017]  
 - Outstanding Student Cadre (Twice)	[Dec 2016/ Dec 2017]  
-- Merit Student of NU	[Dec 2016]
+- Merit Student of NU	[Dec 2016]-->
