@@ -20,10 +20,10 @@ I am available through [Email](u3567831@connect.hku.hk) / [QQ](../images/qq.png)
 
 Publications
 ======
-**[Nonparametric Iterative Machine Teaching](https://arxiv.org/abs/2306.03007)**  
-_Chen Zhang_, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
+**<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](https://arxiv.org/abs/2306.03007)</span>**  
+<u>Chen Zhang</u>, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
 <span style="color:red; font-style:italic;">ICML 2023</span>  
-[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | <div onclick="toggleBib()">bib</div>  
+[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | <div onclick="toggleBib()" style="color: blue; text-decoration: underline; cursor: pointer;">bib</div>  
 <div id="toggleDiv" style="display: none;">
 <pre>
 @InProceedings{zhang2023nimt,
