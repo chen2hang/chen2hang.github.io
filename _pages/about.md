@@ -22,7 +22,29 @@ Publications
 ======
 Nonparametric Iterative Machine Teaching  
 **Chen Zhang**, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
-<span style="color:red; font-style:italic;">ICML 2023</span>
+<span style="color:red; font-style:italic;">ICML 2023</span>  
+[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | <button onclick="toggleBib()">bib</button>  
+<div id="toggleDiv" style="display: none; margin-top: 10px; padding: 5px; background-color: #f0f0f0; border: 1px solid #ccc; font-family: monospace;">
+<pre>
+@InProceedings{zhang2023nimt,
+    title={Nonparametric Iterative Machine Teaching},
+    author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
+    booktitle = {ICML},
+    year={2023}
+}
+</pre>
+</div>
+<script>
+function toggleBib() {
+  var bibDiv = document.getElementById("toggleDiv");
+  if (bibDiv.style.display === "none") {
+    bibDiv.style.display = "block";
+  } else {
+    bibDiv.style.display = "none";
+  }
+}
+</script>
+
 
 Honors
 ======
