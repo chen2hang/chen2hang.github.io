@@ -23,7 +23,7 @@ Publications
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](https://arxiv.org/abs/2306.03007)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
 <span style="color:red; font-style:italic;">ICML 2023</span>  
-[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | <span onclick="toggleBib()" style="color: blue; text-decoration: underline; cursor: pointer;">bib</span>  
+[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | <span onclick="toggleBib()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
 <div id="toggleDiv" style="display: none;">
 <pre>
 @InProceedings{zhang2023nimt,
