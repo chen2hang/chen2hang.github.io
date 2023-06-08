@@ -54,7 +54,7 @@ Honors
 - Top Ten College Students of NU	[May 2018]  
 
 ***  
-&copy; {{ site.time | date: '%Y-%m' }} {{ site.name | default: site.title }} | Last updated on {{ site.time | date: '%Y-%m-%d' }}.  
+<span style="font-size:10px">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on {{ site.time | date: '%Y-%m-%d' }}.</span>  
 <div style="width: 150px; height: 150px; margin: 0 auto;">
    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cmo=ff9f00&cmn=1230ee'></script>
 </div>
