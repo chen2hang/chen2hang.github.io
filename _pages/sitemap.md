@@ -35,3 +35,5 @@ A list of all the posts and pages found on the site. For you robots out there is
   {% endunless %}
 {% endfor %}
 {% endfor %}
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cl=ffffff&w=a"></script>
