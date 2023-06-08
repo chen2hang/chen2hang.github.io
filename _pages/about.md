@@ -53,9 +53,6 @@ Honors
 - Excellent Graduate of Hebei Province	[May 2019]  
 - Top Ten College Students of NU	[May 2018]  
 
-<div id="footer">
-	<div id="footer-text"></div>
-    &copy 2023 Chen Zhang | Last Update: 2023.06
-</div>
-</br>
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=340&t=tt&d=xOKDPeEn4mmceJ5AAW9YHMjTAcz-JoFdsbMnC-iTcyU&co=2d69ad&cmn=cca13a'></script>
+&copy 2023 Chen Zhang | Last Update: 2023.06
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cl=ffffff&w=a"></script>
