@@ -56,4 +56,4 @@ Honors
 ***
 &Last Update: 2023.06
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cl=ffffff&w=a"></script>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I'></script>
