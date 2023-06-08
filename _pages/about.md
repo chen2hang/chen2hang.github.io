@@ -52,7 +52,3 @@ Honors
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
 - Excellent Graduate of Hebei Province	[May 2019]  
 - Top Ten College Students of NU	[May 2018]  
-
-&copy 2023 Chen Zhang | Last Update: 2023.06
-
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cl=ffffff&w=a"></script>
