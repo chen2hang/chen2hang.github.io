@@ -52,3 +52,8 @@ Honors
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
 - Excellent Graduate of Hebei Province	[May 2019]  
 - Top Ten College Students of NU	[May 2018]  
+
+***
+<div style="width: 150px; height: 150px; margin: 0 auto;">
+   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cmo=ff9f00&cmn=1230ee'></script>
+</div>
