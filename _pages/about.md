@@ -8,30 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-<div class="bio", id="biosection" >
-  div.bio {
-    clear: both;
-    margin-top: 0.4em;
-    margin-bottom: 0.7em;
-    border: 0px solid #ddd;
-    background: #fff;
-    padding: 0.55em .8em 0.6em .8em;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    line-height: 135%;
-}
-<p style="margin-bottom:9px">I am a first-year Ph.D. student in the [School of Artificial Intelligence](https://sai.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/), under the supervision of Dr. [Xiaofeng Cao](http://sai.jlu.edu.cn/info/1094/3446.htm). My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly machine teaching. Specifically, my current research focuses on developing principle guided strategies for machine teaching.</p>
+I am a first-year Ph.D. student in the [School of Artificial Intelligence](https://sai.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/), under the supervision of Dr. [Xiaofeng Cao](http://sai.jlu.edu.cn/info/1094/3446.htm). My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly machine teaching. Specifically, my current research focuses on developing principle guided strategies for machine teaching.
 
-<p style="margin-bottom:9px">Prior to joining Jilin University, I obtained a Master's degree in the department of [Statistics & Actuarial Science from the University of Hong Kong](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics.</p>
+Prior to joining Jilin University, I obtained a Master's degree in the department of [Statistics & Actuarial Science from the University of Hong Kong](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics.
 
-<p style="margin-bottom:9px">Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (Qinhuangdao)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.</p>
+Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (Qinhuangdao)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.
 
-<p style="margin-bottom:9px">I am always passionate about applying statistical and machine learning techniques to real-world problems and contributing to the advancement of artificial intelligence and statistics. I firmly believe that [hard work will always pay off](https://en.wikipedia.org/wiki/Achievement_ideology), and as long as we keep moving forward, we will eventually see the light at the end of the tunnel. </p>
+I am always passionate about applying statistical and machine learning techniques to real-world problems and contributing to the advancement of artificial intelligence and statistics. I firmly believe that [hard work will always pay off](https://en.wikipedia.org/wiki/Achievement_ideology), and as long as we keep moving forward, we will eventually see the light at the end of the tunnel.
 
 I am available through [Email](u3567831@connect.hku.hk) / [QQ](../images/qq.png). Please feel free to contact me using any of these methods if you have any questions, feedback, or opportunities you'd like to discuss.  <!-- You can find my CV here: [Johnsn's Curriculum Vitae](../assets/Curriculum_Vitae.pdf), and  -->
-</div>
 
 Publications
 ======
