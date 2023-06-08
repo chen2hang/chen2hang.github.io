@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<div style="font-size:10px; margin-bottom: 5px"> I am a first-year Ph.D. student in the [School of Artificial Intelligence](https://sai.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/), under the supervision of Dr. [Xiaofeng Cao](http://sai.jlu.edu.cn/info/1094/3446.htm). My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly machine teaching. Specifically, my current research focuses on developing principle guided strategies for machine teaching.
+<div style="font-size:8px; margin-bottom: 7px"> I am a first-year Ph.D. student in the [School of Artificial Intelligence](https://sai.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/), under the supervision of Dr. [Xiaofeng Cao](http://sai.jlu.edu.cn/info/1094/3446.htm). My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly machine teaching. Specifically, my current research focuses on developing principle guided strategies for machine teaching.
 
 Prior to joining Jilin University, I obtained a Master's degree in the department of [Statistics & Actuarial Science from the University of Hong Kong](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics. 
 
