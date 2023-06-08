@@ -54,5 +54,5 @@ Honors
 ***  
 <span style="font-size:5px">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on {{ site.time | date: '%Y-%m-%d' }}.</span>  
 <div style="width: 150px; height: 150px; margin: 0 auto;">
-   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cmo=ff9f00&cmn=1230ee'></script>
+   <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=b4b116&w=a&t=n&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&co=4376e4&cmo=ff8100&cmn=0013ff'></script>
 </div>
