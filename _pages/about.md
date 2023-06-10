@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year Ph.D. student in the [School of Artificial Intelligence](https://sai.jlu.edu.cn/) at [Jilin University](https://www.jlu.edu.cn/), under the supervision of Dr. [Xiaofeng Cao](http://sai.jlu.edu.cn/info/1094/3446.htm). My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly machine teaching. Specifically, my current research focuses on developing principle guided strategies for machine teaching.
+I am Johnsn, currently working with Dr. [Xiaofeng Cao](http://sai.jlu.edu.cn/info/1094/3446.htm) at the [School of Artificial Intelligence](https://sai.jlu.edu.cn/) of [Jilin University](https://www.jlu.edu.cn/). My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly machine teaching. Specifically, my current research focuses on developing principle guided strategies for machine teaching.
 
 I am available through [Email](u3567831@connect.hku.hk) / [QQ](../images/qq.png). Please feel free to contact me using any of these methods if you have any questions, feedback, or opportunities you'd like to discuss.  <!-- You can find my CV here: [Johnsn's Curriculum Vitae](../assets/Curriculum_Vitae.pdf), and  -->
 
