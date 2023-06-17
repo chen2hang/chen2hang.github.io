@@ -21,7 +21,7 @@ Publications
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](https://arxiv.org/abs/2306.03007)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
 <span style="color:red; font-style:italic;">ICML 2023</span>  
-[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | [poster](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Poster.pdf) | <span onclick="toggleBib()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
+[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | [poster](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Poster.pdf) | [slides](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Slides.pdf) |<span onclick="toggleBib()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
 <div id="toggleDiv" style="display: none;">
 <pre>
 @InProceedings{zhang2023nimt,
@@ -52,7 +52,7 @@ Honors
 - Top Ten College Students of NU	[May 2018]  
 
 ***  
-<span style="font-size:5px">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on 2023-06-14.</span>  
+<span style="font-size:5px">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on 2023-06-17.</span>  
 <div style="width: 300px; height: 168px; margin: 0 auto;">
    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cmo=ff0028&cmn=ffae00'></script>
 </div>
