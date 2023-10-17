@@ -18,6 +18,32 @@ I am always passionate about applying statistical and machine learning technique
 
 Publications
 ======
+
+**<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](https://neurips.cc/virtual/2023/poster/71441)</span>**  
+__Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
+<span style="color:red; font-style:italic;">NeurIPS 2023</span>  
+[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/MINT_NonparametricTeaching) | [poster](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Poster.pdf) | [slides](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Slides.pdf) | [talk](https://recorder-v3.slideslive.com/?share=81841&s=f2aa5c6c-b216-40d6-871c-d4ac3744a464) | [openreview](https://openreview.net/forum?id=VkUNovXoxx) | <span onclick="toggleBib()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
+<div id="neurips2023" style="display: none;">
+<pre>
+@InProceedings{zhang2023mint,
+    title={Nonparametric Teaching for Multiple Learners},
+    author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
+    booktitle = {NeurIPS},
+    year={2023}
+}
+</pre>
+</div>
+<script>
+function toggleBib() {
+  var bibDiv = document.getElementById("neurips2023");
+  if (bibDiv.style.display === "none") {
+    bibDiv.style.display = "block";
+  } else {
+    bibDiv.style.display = "none";
+  }
+}
+</script>
+
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](https://arxiv.org/abs/2306.03007)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
 <span style="color:red; font-style:italic;">ICML 2023</span>  
@@ -28,31 +54,6 @@ __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok
     title={Nonparametric Iterative Machine Teaching},
     author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
     booktitle = {ICML},
-    year={2023}
-}
-</pre>
-</div>
-<script>
-function toggleBib() {
-  var bibDiv = document.getElementById("toggleDiv");
-  if (bibDiv.style.display === "none") {
-    bibDiv.style.display = "block";
-  } else {
-    bibDiv.style.display = "none";
-  }
-}
-</script>
-
-**<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](https://neurips.cc/virtual/2023/poster/71441)</span>**  
-__Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
-<span style="color:red; font-style:italic;">NeurIPS 2023</span>  
-[arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/MINT_NonparametricTeaching) | [poster](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Poster.pdf) | [slides](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Slides.pdf) | [talk](https://recorder-v3.slideslive.com/?share=81841&s=f2aa5c6c-b216-40d6-871c-d4ac3744a464) | <span onclick="toggleBib()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
-<div id="toggleDiv" style="display: none;">
-<pre>
-@InProceedings{zhang2023mint,
-    title={Nonparametric Teaching for Multiple Learners},
-    author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
-    booktitle = {NeurIPS},
     year={2023}
 }
 </pre>
