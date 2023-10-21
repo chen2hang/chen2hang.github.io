@@ -44,7 +44,7 @@ function toggleBibneurips2023() {
 }
 </script>
 
-**<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](https://proceedings.mlr.press/v202/zhang23c/zhang23c.pdf)</span>**  
+**<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](https://proceedings.mlr.press/v202/zhang23c.html)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
 <span style="color:red; font-style:italic;">ICML 2023</span>  
 [arXiv](https://arxiv.org/abs/2306.03007) | [code](https://github.com/chen2hang/NonparametricTeaching) | [poster](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Poster.pdf) | [slides](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Slides.pdf) | [talk](https://recorder-v3.slideslive.com/?share=81841&s=f2aa5c6c-b216-40d6-871c-d4ac3744a464) | <span onclick="toggleBib()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
