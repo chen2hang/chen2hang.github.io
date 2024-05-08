@@ -9,7 +9,7 @@ redirect_from:
 
 My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly [nonparametric teaching](https://arxiv.org/abs/2306.03007) (NT). Specifically, my current research focuses on developing principle guided strategies for NT and expanding the applicability of NT.
 
-I am available through [Email](mailto:czhang6@connect.hku.hk) (the one of u3567831[at]connect.hku.hk is discarded). Please feel free to contact me using any of these methods if you have any questions, feedback, or opportunities you'd like to discuss. <!-- You can find my CV here: [Johnsn's Curriculum Vitae](../assets/Curriculum_Vitae.pdf), and  -->
+I am available through [Email](mailto:czhang6@connect.hku.hk) (u3567831[at]connect.hku.hk is discarded). Please feel free to contact me if you have any questions, feedback, or opportunities you'd like to discuss. <!-- You can find my CV here: [Johnsn's Curriculum Vitae](../assets/Curriculum_Vitae.pdf), and  -->
 
 Publications
 ======
