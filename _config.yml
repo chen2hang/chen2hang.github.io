@@ -10,7 +10,7 @@ locale                   : "zh-CN"
 title                    : "Chen Zhang / Personal Homepage"
 title_separator          : "-"
 name                     : &name "Chen Zhang"
-description              : &description "a first year PhD student"
+description              : &description ""
 url                      : https://chen2hang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "chen2hang/chen2hang.github.io"
@@ -81,7 +81,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chen Zhang   张晨"
+  name             : "Chen Zhang     张晨"
   avatar           : "profile_img.png"
   bio              : "Hello and welcome."
   location         : "China"
