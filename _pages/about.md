@@ -19,19 +19,28 @@ I am always passionate about applying statistical and machine learning technique
 Publications
 ======
 
-**<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
-__Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
-<span style="color:red; font-style:italic;">NeurIPS 2023</span>  
-[arXiv](https://arxiv.org/abs/2311.10318) | [code](https://github.com/chen2hang/MINT_NonparametricTeaching) | [poster](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Poster.pdf) | [slides](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Slides.pdf) | [openreview](https://openreview.net/forum?id=VkUNovXoxx) | <span onclick="toggleBibneurips2023()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
-<div id="neurips2023" style="display: none;">
-<pre>
-@InProceedings{zhang2023mint,
-    title={Nonparametric Teaching for Multiple Learners},
-    author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
-    booktitle = {NeurIPS},
-    year={2023}
-}
-</pre>
+<div>
+    <div style="float: left; padding-right: 20px;">
+        <img src="../_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" alt="Publication Image" width="100">
+    </div>
+    <div>
+        <span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>  
+        <br>
+        <span style="font-weight:bold;">Chen Zhang</span>, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
+        <span style="color:red; font-style:italic;">NeurIPS 2023</span>  
+        <br>
+        <a href="https://arxiv.org/abs/2311.10318">arXiv</a> | <a href="https://github.com/chen2hang/MINT_NonparametricTeaching">code</a> | <a href="../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Poster.pdf">poster</a> | <a href="../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Slides.pdf">slides</a> | <a href="https://openreview.net/forum?id=VkUNovXoxx">openreview</a> | <span onclick="toggleBibneurips2023()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
+    </div>
+    <div id="neurips2023" style="display: none;">
+        <pre>
+        @InProceedings{zhang2023mint,
+            title={Nonparametric Teaching for Multiple Learners},
+            author={Zhang, Chen and Cao, Xiaofeng and Liu, Weiyang and Tsang, Ivor and Kwok, James},
+            booktitle = {NeurIPS},
+            year={2023}
+        }
+        </pre>
+    </div>
 </div>
 <script>
 function toggleBibneurips2023() {
