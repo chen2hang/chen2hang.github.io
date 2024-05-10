@@ -17,8 +17,7 @@ redirect_from:
 
 <span style="color:white"><br></span>
 
-📃 Publications
-======
+# 📃 Publications
 
 <img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="160px" alt="" align="right" />
 
@@ -78,8 +77,7 @@ function toggleBib() {
 
 <span style="color:white"><br></span>
 
-🏆 Honors
-======
+# 🏆 Honors
 
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
 - Excellent Graduate of Hebei Province	[May 2019]  
@@ -87,8 +85,7 @@ function toggleBib() {
 
 <span style="color:white"><br></span>
 
-🖊 Miscellaneous
-======
+# 🖊 Miscellaneous
 
 <span style="text-align:justify; display: inline-block;">I obtained a Master's degree in the department of [Statistics & Actuarial Science from the University of Hong Kong](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics. Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (Qinhuangdao)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.</span>
 
