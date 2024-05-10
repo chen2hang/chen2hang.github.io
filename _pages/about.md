@@ -94,7 +94,7 @@ function toggleBib() {
 <span style="text-align:justify; display: inline-block;">I am always passionate about applying statistical and machine learning techniques to real-world problems and contributing to the advancement of artificial intelligence and statistics. I firmly believe that [hard work will always pay off](https://en.wikipedia.org/wiki/Achievement_ideology), and as long as we keep moving forward, we will eventually see the light at the end of the tunnel.</span>
 
 ***  
-<span style="font-size:1px">&copy; 2023 - {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on {{ site.time | date_to_string }}.</span>  
-<div style="width: 7px; height: 4px; margin: 0 auto;">
+<span style="font-size:10px">&copy; 2023 - {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on {{ site.time | date_to_string }}.</span>  
+<div style="width: 0px; height: 0px; margin: 0 auto;">
    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cmo=ff0028&cmn=ffae00'></script>
 </div>
