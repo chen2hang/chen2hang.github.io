@@ -39,7 +39,7 @@ function toggleBibneurips2023() {
 }
 </script>
 
-<img src=../_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png  width="100px" alt="Project" align="right" />
+<img src="/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="100px" alt="" align="right" />
 
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
