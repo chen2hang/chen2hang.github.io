@@ -41,7 +41,7 @@ function toggleBibneurips2023() {
 }
 </script>
 
-<img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" height="20px" alt="" align="right" />
+<img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" height="3cm" alt="" align="right" />
 
 --------
 
