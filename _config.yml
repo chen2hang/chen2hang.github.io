@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "Chen Zhang / Personal Homepage"
+title                    : "Chen Zhang's Homepage"
 title_separator          : "-"
 name                     : &name "Chen Zhang"
 description              : &description ""
