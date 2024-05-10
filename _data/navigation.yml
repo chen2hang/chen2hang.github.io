@@ -8,10 +8,10 @@ main:
     url: "/#-publications"
 
   - title: "Honors"
-    url: "/#-Honors"
+    url: "/#-honors"
     
   - title: "Miscellaneous"
-    url: "/#-Miscellaneous"
+    url: "/#-hiscellaneous"
     
   # - title: "Talks"
   #   url: /talks/    
