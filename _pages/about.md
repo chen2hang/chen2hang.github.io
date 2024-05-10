@@ -16,7 +16,7 @@ Publications
 
 ----
 
-<img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="120px" height="auto" alt="" style="float:left; margin-left: 20px;" />
+<img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="120px" height="auto" alt="" style="float:left; margin-right: 20px;" />
 
 **<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
@@ -45,7 +45,7 @@ function toggleBibneurips2023() {
 
 --------
 
-<img src="/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="120cm" alt="" align="right" />
+<img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_iterative_machine_teaching/comp.png" width="120px" height="auto" alt="" style="float:left; margin-right: 20px;" />
 
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
