@@ -14,7 +14,10 @@ redirect_from:
 Publications
 ======
 
-| <img src="/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.jpg" width="50cm" alt="" align="right" /> | **<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**<br>__Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok | <br>
+<img src="/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.jpg" width="100cm" alt="" align="left" />
+
+**<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
+__Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
 <span style="color:red; font-style:italic;">NeurIPS 2023</span>  
 [arXiv](https://arxiv.org/abs/2311.10318) | [code](https://github.com/chen2hang/MINT_NonparametricTeaching) | [poster](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Poster.pdf) | [slides](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Slides.pdf) | [openreview](https://openreview.net/forum?id=VkUNovXoxx) | <span onclick="toggleBibneurips2023()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
 <div id="neurips2023" style="display: none;">
