@@ -16,8 +16,7 @@ Publications
 
 --------
 
-<img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" weight="10cm" align="right" />
-
+<img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" weight="20cm" alt="" align="right" />
 **<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
 <span style="color:red; font-style:italic;">NeurIPS 2023</span>  
