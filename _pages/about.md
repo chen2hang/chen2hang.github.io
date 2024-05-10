@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<span style="color:white">  </span>
+<span class='anchor' id='about-me'></span>
 
 # 👋😀 Hi (你好, Hallo, Bonjour, こんにちは, 안녕하세요) !
 
