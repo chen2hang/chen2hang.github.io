@@ -6,6 +6,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
+# 
+
 # 👋😀 Hi!
 
 <span style="text-align:justify; display: inline-block;">My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly [nonparametric teaching](https://arxiv.org/abs/2306.03007) (NT). Specifically, my current research focuses on developing principle guided strategies for NT and expanding the applicability of NT.</span>
