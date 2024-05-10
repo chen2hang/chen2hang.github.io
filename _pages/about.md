@@ -9,12 +9,14 @@ redirect_from:
 
 <span style="text-align:justify; display: inline-block; color:royalblue;">My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly [nonparametric teaching](https://arxiv.org/abs/2306.03007) (NT). Specifically, my current research focuses on developing principle guided strategies for NT and expanding the applicability of NT.</span>
 
-<span style="text-align:justify; display: inline-block;">I am available through [Email](mailto:czhang6@connect.hku.hk) (u3567831[at]connect.hku.hk is discarded). Please feel free to contact me if you have any questions, feedback, or opportunities you'd like to discuss. </span>
+<span style="text-align:justify; display: inline-block;"> Please feel free to [Email](mailto:czhang6@connect.hku.hk) (u3567831[at]connect.hku.hk is discarded) me if you have any questions, feedback, or opportunities you'd like to discuss. </span>
 
 Publications
 ======
 
-<img src="/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="100cm" alt="" align="left" />
+----
+
+<img src="/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="120cm" alt="" align="right" />
 
 **<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
@@ -40,6 +42,10 @@ function toggleBibneurips2023() {
   }
 }
 </script>
+
+--------
+
+<img src="/_publications/nonparametric_iterative_machine_teaching/comp.png" width="140cm" alt="" align="right" />
 
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
