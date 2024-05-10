@@ -14,10 +14,10 @@ redirect_from:
 
 <span style="text-align:justify; display: inline-block;"> Please feel free to [Email](mailto:czhang6@connect.hku.hk) (u3567831[at]connect.hku.hk is discarded) me if you have any questions, feedback, or opportunities you'd like to discuss. </span>
 
+<span style="color:white">  </span>
+
 📃 Publications
 ======
-
---------
 
 <img src="https://raw.githubusercontent.com/chen2hang/chen2hang.github.io/master/_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="160px" alt="" align="right" />
 
@@ -75,12 +75,16 @@ function toggleBib() {
 }
 </script>
 
+<span style="color:white">  </span>
+
 🏆 Honors
 ======
 
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
 - Excellent Graduate of Hebei Province	[May 2019]  
 - Top Ten College Students of NU	[May 2018]  
+
+<span style="color:white">  </span>
 
 🖊 Miscellaneous
 ======
@@ -90,7 +94,7 @@ function toggleBib() {
 <span style="text-align:justify; display: inline-block;">I am always passionate about applying statistical and machine learning techniques to real-world problems and contributing to the advancement of artificial intelligence and statistics. I firmly believe that [hard work will always pay off](https://en.wikipedia.org/wiki/Achievement_ideology), and as long as we keep moving forward, we will eventually see the light at the end of the tunnel.</span>
 
 ***  
-<span style="font-size:5px">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on 2024-03-18.</span>  
-<div style="width: 300px; height: 168px; margin: 0 auto;">
+<span style="font-size:50px">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on {{ site.time | date_to_string }}.</span>  
+<div style="width: 70px; height: 40px; margin: 0 auto;">
    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cmo=ff0028&cmn=ffae00'></script>
 </div>
