@@ -7,11 +7,14 @@ redirect_from:
   - /about.html
 ---
 
+👋😀
+======
+
 <span style="text-align:justify; display: inline-block;">My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly [nonparametric teaching](https://arxiv.org/abs/2306.03007) (NT). Specifically, my current research focuses on developing principle guided strategies for NT and expanding the applicability of NT.</span>
 
 <span style="text-align:justify; display: inline-block;"> Please feel free to [Email](mailto:czhang6@connect.hku.hk) (u3567831[at]connect.hku.hk is discarded) me if you have any questions, feedback, or opportunities you'd like to discuss. </span>
 
-Publications
+📃 Publications
 ======
 
 --------
@@ -72,14 +75,14 @@ function toggleBib() {
 }
 </script>
 
-Honors
+🏆 Honors
 ======
 
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
 - Excellent Graduate of Hebei Province	[May 2019]  
 - Top Ten College Students of NU	[May 2018]  
 
-Miscellaneous
+🖊 Miscellaneous
 ======
 
 <span style="text-align:justify; display: inline-block;">I obtained a Master's degree in the department of [Statistics & Actuarial Science from the University of Hong Kong](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics. Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (Qinhuangdao)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.</span>
