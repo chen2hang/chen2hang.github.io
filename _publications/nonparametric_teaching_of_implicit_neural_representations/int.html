@@ -95,7 +95,6 @@
                         </a>
                         </br>HKU
                     </li>
-                    <br>
                     <li>
                         <a href="https://www.eee.hku.hk/~nwong/">
                           Ngai Wong
@@ -134,9 +133,9 @@
                 <h3>
                     Abstract
                 </h3>
-                <image src="img/teaser.png" class="img-responsive" alt="overview"><br>
+                <image src="figure1.png" class="img-responsive" alt="overview"><br>
                 <p class="text-justify">
-We show that passing input points through a simple Fourier feature mapping enables a multilayer perceptron (MLP) to learn high-frequency functions in low-dimensional problem domains. These results shed light on recent advances in computer vision and graphics that achieve state-of-the-art results by using MLPs to represent complex 3D objects and scenes. Using tools from the neural tangent kernel (NTK) literature, we show that a standard MLP fails to learn high frequencies both in theory and in practice. To overcome this spectral bias, we use a Fourier feature mapping to transform the effective NTK into a stationary kernel with a tunable bandwidth. We suggest an approach for selecting problem-specific Fourier features that greatly improves the performance of MLPs for low-dimensional regression tasks relevant to the computer vision and graphics communities.
+We investigate the learning of implicit neural representation (INR) using an overparameterized multilayer perceptron (MLP) via a novel nonparametric teaching perspective. The latter offers an efficient example selection framework for teaching nonparametrically defined (viz. non-closed-form) target functions, such as image functions defined by 2D grids of pixels. To address the costly training of INRs, we propose a paradigm called Implicit Neural Teaching (INT) that treats INR learning as a nonparametric teaching problem, where the given signal being fitted serves as the target function. The teacher then selects signal fragments for iterative training of the MLP to achieve fast convergence. By establishing a connection between MLP evolution through parameter-based gradient descent and that of function evolution through functional gradient descent in nonparametric teaching, we show \emph{for the first time} that teaching an overparameterized MLP is consistent with teaching a nonparametric learner. This new discovery readily permits a convenient drop-in of nonparametric teaching algorithms to broadly enhance INR training efficiency, demonstrating 30\%+ training time savings across various input modalities.
                 </p>
             </div>
         </div>
@@ -246,11 +245,11 @@ We show that passing input points through a simple Fourier feature mapping enabl
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-@article{tancik2020fourfeat,
-    title={Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains},
-    author={Matthew Tancik and Pratul P. Srinivasan and Ben Mildenhall and Sara Fridovich-Keil and Nithin Raghavan and Utkarsh Singhal and Ravi Ramamoorthi and Jonathan T. Barron and Ren Ng},
-    journal={NeurIPS},
-    year={2020}
+@InProceedings{zhang2024ntinr,
+    title={Nonparametric Teaching of Implicit Neural Representations},
+    author={Zhang, Chen and Luo, Steven and Li, Jason and Wu, Yik-Chung and Wong, Ngai},
+    booktitle = {ICML},
+    year={2024}
 }</textarea>
                 </div>
             </div>
@@ -262,14 +261,9 @@ We show that passing input points through a simple Fourier feature mapping enabl
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                We thank Ben Recht for advice, and Cecilia Zhang, Tim Brooks, Jascha Sohl-Dickstein, Preetum Nakkiran, and Serena Wang for their comments on the text.
+                We thank all anonymous reviewers for their constructive feedback to improve this project.
                     <br>
-                BM is funded by a Hertz Foundation Fellowship and acknowledges support from the Google BAIR Commons program. 
-                MT, PS, and SFK are funded by NSF Graduate Fellowships.
-                RR was supported in part by ONR grants N000141712687 and
-                N000142012529 and the Ronald L. Graham Chair.
-                RN was supported in part by an FHL Vive Center Seed Grant.
-                Google University Relations provided a generous donation of compute credits.
+                This work was supported by the Theme-based Research Scheme (TRS) project T45-701/22-R, and in part by ACCESS – AI Chip Center for Emerging Smart Systems, sponsored by InnoHK funding, Hong Kong SAR.
                     <br>
                 The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
                 </p>
