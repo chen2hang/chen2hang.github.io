@@ -18,9 +18,9 @@
 
 .page {
   @include breakpoint($large) {
-    @include span(11 of 12 last);
+    @include span(10 of 12);
     @include prefix(0.5 of 12);
-    @include suffix(1 of 12);
+    @include suffix(0 of 12);
   }
 
   .page__inner-wrap {
@@ -49,7 +49,17 @@
 }
 
 .page__content {
-
+   #about-me{
+    margin-top: -10em;
+      &:before { 
+        content: ''; 
+        display: block; 
+        position: relative; 
+        width: 0; 
+        height: 10em; 
+        margin-top: -10em;
+    }
+  }
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
