@@ -76,6 +76,21 @@
         margin-top: 0;
       }
     </style>
+
+	<style>
+	  table {
+	    border-collapse: collapse;
+	    width: 100%;
+	  }
+	  th, td {
+	    border: 1px solid black;
+	    padding: 8px;
+	    text-align: left;
+	  }
+	  th {
+	    background-color: #f2f2f2;
+	  }
+	</style>
     
 </head>
 
@@ -357,7 +372,7 @@
                     Experiments and Implementations
                 </h3>
                 <p class="text-justify">
-                    We provide a <span class="red"><b>plug-and-play</b></span> <a href="https://proceedings.neurips.cc/paper/2020/file/53c04118df112c13a8c34b38343b9c10-Paper.pdf">package</a> to generally speed up INRs training.<br>
+                    We provide a <span class="red"><b>plug-and-play</b></span> <a href="https://github.com/stevolopolis/nmt_inr">package</a> to generally speed up INRs training.<br>
                 </p>
             </div>
         </div>
@@ -389,16 +404,62 @@
                 <h4>
                     INT on multiple real-world modalities.
                 </h4>
-		<figure>
-			<image src="best_pred_summary.png" height="300px" class="center">
-			<figcaption>Reconstruction quality of SIREN. (b) trains SIREN without (w/o) INT using all pixels. (c) trains it w/o INT using 20% randomly selected pixels. (d) trains it using INT of 20% selection rate. (e) trains it using progressive INT (i.e., increasing selection rate progressively from 20% to 100%).
-			</figcaption>
-		</figure>
-		<figure>
-			<image src="sampling_dynamics_camera.png" height="300px" class="center">
-			<figcaption>Progression of INT selected pixels (marked as black) at corresponding iterations when training with INT 20% (top) and 40% (bottom).
-			</figcaption>
-		</figure>
+		<table>
+		  <thead>
+		    <tr>
+		      <th>INT</th>
+		      <th>Modality</th>
+		      <th>Time (s)</th>
+		      <th>PSNR(dB) / IoU(%) ↑</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+		    <tr>
+		      <td rowspan="4">✗</td>
+		      <td>Audio</td>
+		      <td>23.05</td>
+		      <td>48.38 ± 3.50</td>
+		    </tr>
+		    <tr>
+		      <td>Image</td>
+		      <td>345.22</td>
+		      <td>36.09 ± 2.51</td>
+		    </tr>
+		    <tr>
+		      <td>Megapixel</td>
+		      <td>16.78K</td>
+		      <td>31.82</td>
+		    </tr>
+		    <tr>
+		      <td>3D Shape</td>
+		      <td>144.58</td>
+		      <td>97.07 ± 0.84</td>
+		    </tr>
+		    <tr>
+		      <td rowspan="4">✓</td>
+		      <td>Audio</td>
+		      <td>15.76 (-31.63%)</td>
+		      <td>48.15 ± 3.39</td>
+		    </tr>
+		    <tr>
+		      <td>Image</td>
+		      <td>211.04 (-38.88%)</td>
+		      <td>36.97 ± 3.59</td>
+		    </tr>
+		    <tr>
+		      <td>Megapixel</td>
+		      <td>11.87K (-29.26%)</td>
+		      <td>33.01</td>
+		    </tr>
+		    <tr>
+		      <td>3D Shape</td>
+		      <td>93.19 (-35.54%)</td>
+		      <td>96.68 ± 0.83</td>
+		    </tr>
+		  </tbody>
+		</table>
+		
+		<p>Signal fitting results for different data modalities. The encoding time is measured excluding data I/O latency.</p>
 	    </div>
         </div>
 	<!-- -------------------- Related links --------------------  -->
