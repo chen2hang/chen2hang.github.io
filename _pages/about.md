@@ -20,12 +20,12 @@ redirect_from:
 
 # 📃 Publications
 
-<!-- <img src="_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png" width="160px" alt="" align="right" />
+<img src="_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png" width="160px" alt="" align="right" />
 
 **<span style="color:royalblue">[Nonparametric Teaching of Implicit Neural Representations](../_publications/_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Paper.pdf)</span>**  
 __Chen Zhang__\*, Steven Tin Sui Luo\*, Jason Chun Lok Li, Yik-Chung Wu, Ngai Wong  
 <span style="color:red; font-style:italic;">ICML 2024</span>  
-[arXiv](https://arxiv.org/abs/) | [project page](https://chen2hang.github.io/_publications/nonparametric_teaching_of_implicit_neural_representations/int.html) | [code](https://github.com/stevolopolis/nmt_inr) | [poster](../_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Poster.pdf) | [slides](../_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Slides.pdf) | <span onclick="toggleDivIcml2024()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
+[arXiv](https://arxiv.org/abs/) | [<span style="color:orangered;">project page</span>](https://chen2hang.github.io/_publications/nonparametric_teaching_of_implicit_neural_representations/int.html) | [code](https://github.com/stevolopolis/nmt_inr) | [poster](../_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Poster.pdf) | [slides](../_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Slides.pdf) | <span onclick="toggleDivIcml2024()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
 <div id="icml2024" style="display: none;">
 <pre>
 @InProceedings{zhang2024ntinr,
@@ -45,7 +45,7 @@ function toggleDivIcml2024() {
     bibDiv.style.display = "none";
   }
 }
-</script>-->
+</script>
 
 --------
 
