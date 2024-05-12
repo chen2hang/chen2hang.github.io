@@ -79,16 +79,23 @@
 
 	<style>
 	  table {
-	    border-collapse: collapse;
 	    width: 100%;
+	    border-collapse: collapse;
 	  }
 	  th, td {
-	    border: 1px solid black;
-	    padding: 8px;
-	    text-align: left;
+	    padding: 12px 15px;
+	    text-align: center;
+	    border-bottom: 1px solid #ddd;
 	  }
 	  th {
 	    background-color: #f2f2f2;
+	  }
+	  tr:nth-child(even) {
+	    background-color: #f9f9f9;
+	  }
+	  caption {
+	    font-weight: bold;
+	    margin-bottom: 10px;
 	  }
 	</style>
     
@@ -342,7 +349,7 @@
 			</figure>
                     </p>
 		    
-		    <p style="text-align:center;">
+		    <p class="text-justify">
 		    Based on the above, it reveals the connection between the training set and the convergence of \( f_{\theta^0} \) towards \( f^* \), which indicates that when evaluated on the training set, the discrepancy between \( f_{\theta^0} \) and \( f^* \) at the \( i \)-th component exponentially converges to zero at a rate of \( e^{-\eta\lambda_i t} \), which is also dependent on the training set <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Meanwhile, this insight uncovers the reason for the sluggish convergence that empirically arises after training for an extended period, wherein small eigenvalues hinder the speed of convergence when continuously training on a static training set.
                     </p>
 		</p>
@@ -385,12 +392,12 @@
                     Toy 2D Cameraman fitting.
                 </h4>
 		<figure>
-			<image src="best_pred_summary.png" height="300px" class="center">
+			<image src="best_pred_summary.png" style="display: block; margin: 0 auto;" height="150px">
 			<figcaption>Reconstruction quality of SIREN. (b) trains SIREN without (w/o) INT using all pixels. (c) trains it w/o INT using 20% randomly selected pixels. (d) trains it using INT of 20% selection rate. (e) trains it using progressive INT (i.e., increasing selection rate progressively from 20% to 100%).
 			</figcaption>
 		</figure>
 		<figure>
-			<image src="sampling_dynamics_camera.png" height="300px" class="center">
+			<image src="sampling_dynamics_camera.png" style="display: block; margin: 0 auto;" height="250px">
 			<figcaption>Progression of INT selected pixels (marked as black) at corresponding iterations when training with INT 20% (top) and 40% (bottom).
 			</figcaption>
 		</figure>
@@ -486,9 +493,10 @@
                 </p>
                 <p class="text-justify">
                     You can find code to replicate all our experiments on <a href="https://github.com/tancik/fourier-feature-networks">GitHub</a>, but if you just want to try experimenting with the images used on this webpage you can find the uncompressed originals here: 
-                    <a href="img/lion_orig.png">Lion</a>,
-                    <a href="img/greece_orig.png">Greece</a>,
-                    <a href="img/fox_orig.png">Fox</a>.
+		    <a href="https://peerj.com/articles/453/?report=reader&utm_source=TrendMD&utm_campaign=PeerJ_TrendMD_1&utm_medium=TrendMD">Cameraman</a>.
+                    <a href="http://r0k.us/graphics/kodak/">Kodak</a>,
+                    <a href="https://solarsystem.nasa.gov/resources/933/true-colors-of-pluto/?category=planets/dwarf-planets_pluto">Pluto image</a>,
+                    <a href="https://graphics.stanford.edu/data/3Dscanrep/">Stanford 3D Scanning Repository dataset</a>.
                 </p>
             </div>
         </div>
