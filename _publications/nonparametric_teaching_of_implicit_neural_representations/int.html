@@ -310,7 +310,14 @@
 			\end{eqnarray}
 		    with a diagonal matrix \( \boldsymbol{D^t}=\text{diag}(e^{-\eta\lambda_1 t},\cdots,e^{-\eta\lambda_N t}) \). To be specific, \( \left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) refers to the difference vector between \( f_{\theta^0} \) and \( f^* \) at the initial time, which is evaluated at all training examples, whereas \( \left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) denotes the difference vector at time \( t \). Additionally, \( \boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) can be interpreted as the projection of the difference vector onto eigenvectors (\ie, the principal components) at the beginning, while \( \boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) represents the projection at time \( t \). Figure below provides a lucid illustration in a 2D function coordinate system.
 		    <p style="text-align:center;">
-                    	<image src="proj.png" height="30px" class="center">
+			<figure>
+				<image src="proj.png" height="300px" class="center">
+				<figcaption>An illustration of the spectral understanding in a 2D function coordinate system (i.e., RKHS) with the \( \{K(\boldsymbol{x}_i,\cdot)\}_2 \) basis. The basis can be non-orthogonal if \( K(\boldsymbol{x}_i,\boldsymbol{x}_j)\neq0 \) for \( i\neq j \). The coordinate of \( f_{\theta^t}-f^* \) represents its projection on each axis, which is given by \( \langle\left(f_{\theta^t}-f^*\right),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]^T_2 \), and that of \( K(\boldsymbol{x}_\dagger,\cdot) \) is \( \langle K(\boldsymbol{x}_\dagger,\cdot),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[K(\boldsymbol{x}_\dagger,\boldsymbol{x}_i)\right]^T_2 \), which is stored in the \( \dagger \)-th row of \( \boldsymbol{K} \). Assuming \( \bar{\boldsymbol{K}}=\left[\begin{array}{cc}
+					0.5 & 0.25 \\
+					0.25 & 0.5 \\
+					\end{array}\right] \), the eigenvalues and the respective eigenvectors can be computed as \( \lambda_1=0.75,\lambda_2=0.25 \) and \( \boldsymbol{v}_1=(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})^T,\boldsymbol{v}_2=(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})^T \), respectively. Assuming \( [f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)]_2 \) equals \( (1,0.5) \), its first and second principal component projections are \( \frac{3\sqrt{2}}{4} \) and \( -\frac{\sqrt{2}}{4} \), respectively. Moreover, the discrepancy between \( f_{\theta^t} \) and \( f^* \) diminishes at a rate of \( e^{-\frac{3\eta t}{4}} \) and  \)e^{-\frac{\eta t}{4}} \) for the first and second principal components, respectively.
+				</figcaption>
+			</figure>
                     </p>
 
 		    Based on the above, it reveals the connection between the training set and the convergence of \( f_{\theta^0} \) towards \( f^* \), which indicates that when evaluated on the training set, the discrepancy between \( f_{\theta^0} \) and \( f^* \) at the \( i \)-th component exponentially converges to zero at a rate of \( e^{-\eta\lambda_i t} \), which is also dependent on the training set <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Meanwhile, this insight uncovers the reason for the sluggish convergence that empirically arises after training for an extended period, wherein small eigenvalues hinder the speed of convergence when continuously training on a static training set.
@@ -368,7 +375,7 @@
             </div>
         </div>
 
-            
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
