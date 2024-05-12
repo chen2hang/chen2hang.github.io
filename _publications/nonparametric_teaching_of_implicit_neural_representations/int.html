@@ -340,7 +340,7 @@
 		    with a diagonal matrix \( \boldsymbol{D^t}=\text{diag}(e^{-\eta\lambda_1 t},\cdots,e^{-\eta\lambda_N t}) \). To be specific, \( \left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) refers to the difference vector between \( f_{\theta^0} \) and \( f^* \) at the initial time, which is evaluated at all training examples, whereas \( \left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) denotes the difference vector at time \( t \). Additionally, \( \boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) can be interpreted as the projection of the difference vector onto eigenvectors (\ie, the principal components) at the beginning, while \( \boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) represents the projection at time \( t \). Figure below provides a lucid illustration in a 2D function coordinate system.
 		    <p style="text-align:center;">
 			<figure>
-				<image src="proj.png" height="300px" class="center">
+				<image src="proj.png" style="display: block; margin: 0 auto;" height="300px">
 				<figcaption>An illustration of the spectral understanding in a 2D function coordinate system (i.e., RKHS) with the \( \{K(\boldsymbol{x}_i,\cdot)\}_2 \) basis. The basis can be non-orthogonal if \( K(\boldsymbol{x}_i,\boldsymbol{x}_j)\neq0 \) for \( i\neq j \). The coordinate of \( f_{\theta^t}-f^* \) represents its projection on each axis, which is given by \( \langle\left(f_{\theta^t}-f^*\right),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]^T_2 \), and that of \( K(\boldsymbol{x}_\dagger,\cdot) \) is \( \langle K(\boldsymbol{x}_\dagger,\cdot),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[K(\boldsymbol{x}_\dagger,\boldsymbol{x}_i)\right]^T_2 \), which is stored in the \( \dagger \)-th row of \( \boldsymbol{K} \). Assuming \( \bar{\boldsymbol{K}}=\left[\begin{array}{cc}
 					0.5 & 0.25 \\
 					0.25 & 0.5 \\
@@ -379,7 +379,7 @@
                     Experiments and Implementations
                 </h3>
                 <p class="text-justify">
-                    We provide a <span class="red"><b>plug-and-play</b></span> <a href="https://github.com/stevolopolis/nmt_inr">package</a> to generally speed up INRs training.<br>
+                    We provide a <b><span class="red">plug-and-play</span></b> <a href="https://github.com/stevolopolis/nmt_inr">package</a> to generally speed up INRs training.<br>
                 </p>
             </div>
         </div>
@@ -422,7 +422,7 @@
 		  </thead>
 		  <tbody>
 		    <tr>
-		      <td rowspan="4">✗</td>
+		      <td rowspan="4"><span style="font-size: 24px;">✗</span></td>
 		      <td>Audio</td>
 		      <td>23.05</td>
 		      <td>48.38 ± 3.50</td>
@@ -443,7 +443,7 @@
 		      <td>97.07 ± 0.84</td>
 		    </tr>
 		    <tr>
-		      <td rowspan="4">✓</td>
+		      <td rowspan="4"><span style="font-size: 24px;">✓</span></td>
 		      <td>Audio</td>
 		      <td>15.76 (-31.63%)</td>
 		      <td>48.15 ± 3.39</td>
@@ -492,7 +492,7 @@
                     <a href="https://vsitzmann.github.io/siren/">Sitzmann et al. (2020)</a> concurrently introduced <em>sinusoidal representation networks</em> (SIREN), demonstrating exciting progress in coordinate based MLP representations by using a sine function as the nonlinearity between <em>all</em> layers in the network. This allows the MLPs to accurately represent first and second order derivatives of low dimensional signals. 
                 </p>
                 <p class="text-justify">
-                    You can find code to replicate all our experiments on <a href="https://github.com/tancik/fourier-feature-networks">GitHub</a>, but if you just want to try experimenting with the images used on this webpage you can find the uncompressed originals here: 
+                    You can find the datasets used in this project here: 
 		    <a href="https://peerj.com/articles/453/?report=reader&utm_source=TrendMD&utm_campaign=PeerJ_TrendMD_1&utm_medium=TrendMD">Cameraman</a>.
                     <a href="http://r0k.us/graphics/kodak/">Kodak</a>,
                     <a href="https://solarsystem.nasa.gov/resources/933/true-colors-of-pluto/?category=planets/dwarf-planets_pluto">Pluto image</a>,
