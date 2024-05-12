@@ -375,8 +375,8 @@
                 <p class="text-justify">
                     With the spectral analysis above, a deeper understanding of INT follows. First, we define the entire space as the one spanned by the basis corresponding to the whole training set \( \{K(\boldsymbol{x}_i,\cdot)\}_N \). Similarly, \( \{K(\boldsymbol{x}_i,\cdot)\}_k\subseteq\{K(\boldsymbol{x}_i,\cdot)\}_N \) spans subspaces associated with the selected examples. The eigenvalue of the transformation from the entire space to the subspace of concern (i.e., spanned by \( \{K(\boldsymbol{x}_i,\cdot)\}_k \) associated with selected examples) is one, while it is zero for the subspace without interest <a href="https://ieeexplore.ieee.org/abstract/document/514881">(Watanabe & Katagiri, 1995; </a><a href="https://ieeexplore.ieee.org/abstract/document/492544">Burgess & Van Veen, 1996)</a>. The spectral understanding indicates that \( f_{\theta^t} \) approaches \( f^* \) swiftly at the early stage within the current subspace, owing to the large eigenvalues <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Hence, the INT algorithm can be interpreted as dynamically altering the subspace of interest to fully exploit the period when \( f_{\theta^t} \) approaches \( f^* \) rapidly. Meanwhile, by selecting examples based on
 		    \begin{eqnarray}
-		    {\{\boldsymbol{x}_i\}_k}^*=\underset{\{\boldsymbol{x}_i\}_k\subseteq\{\boldsymbol{x}_i\}_N}{\arg\max}\left\|\left[f_{\theta}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_k\right\|_2.
-		    \end{eqnarray}, the subspace of interest is precisely the one where \( f_{\theta^t} \) remains significantly distant from \( f^* \). In a nutshell, the INT algorithm, by dynamically altering the subspace of interest, not only maximizes the benefits of the fast convergence stage but also updates \( f_{\theta^t} \) in the most urgent direction towards \( f^* \), thereby saving computational resources compared to training on the entire dataset.
+		    {\{\boldsymbol{x}_i\}_k}^*=\underset{\{\boldsymbol{x}_i\}_k\subseteq\{\boldsymbol{x}_i\}_N}{\arg\max}\left\|\left[f_{\theta}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_k\right\|_2,
+		    \end{eqnarray} the subspace of interest is precisely the one where \( f_{\theta^t} \) remains significantly distant from \( f^* \). In a nutshell, the INT algorithm, by dynamically altering the subspace of interest, not only maximizes the benefits of the fast convergence stage but also updates \( f_{\theta^t} \) in the most urgent direction towards \( f^* \), thereby saving computational resources compared to training on the entire dataset.
                 </p>
             </div>
         </div>
@@ -491,7 +491,7 @@
                 <p class="text-justify">
                     Related works (for developing a deeper understanding of INT) are: <br>
 		    <p class="indented">[NeurIPS 2023] <a href="https://www.matthewtancik.com/nerf">Nonparametric Teaching for Multiple Learners</a>,</p>
-		    <p class="indented">[ICML 2023]<span style="color:white">   </span> <a href="https://www.matthewtancik.com/nerf">Nonparametric Iterative Machine Teaching</a>.<br></p>
+		    <p class="indented">[ICML 2023]<span style="color:white">___</span> <a href="https://www.matthewtancik.com/nerf">Nonparametric Iterative Machine Teaching</a>.<br></p>
                 </p>
                 <p class="text-justify">
                     You can find the datasets used in this project here: 
