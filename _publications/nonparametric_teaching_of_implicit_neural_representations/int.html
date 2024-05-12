@@ -278,23 +278,22 @@
                 </p>
                 <p class="text-justify">
                     Solving this ODE, we obtain:
-                    \begin{eqnarray}
+                    \begin{eqnarray}\label{smode}
                     	\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N=e^{-\eta\bar{\boldsymbol{K}}t}\cdot\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N,
                     \end{eqnarray}
                     where \( \bar{\boldsymbol{K}}=\boldsymbol{K}/N \), and \( \boldsymbol{K} \) is a symmetric and positive definite matrix of size \( N\times N \) with entries \( K(\boldsymbol{x}_i,\boldsymbol{x}_j) \) at the \( i \)-th row and \( j \)-th column.
-                    Due to the symmetric and positive definite nature of \( \bar{\boldsymbol{K}} \), it can be orthogonally diagonalized as \( \bar{\boldsymbol{K}}=\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T \) based on spectral theorem~\cite{hall2013quantum}, where \( \boldsymbol{V}=[\boldsymbol{v}_1,\cdots,\boldsymbol{v}_N] \) with column vectors \( \boldsymbol{v}_i \) representing eigenvectors corresponding to eigenvalue \( \lambda_i \), and \( \boldsymbol{\Lambda}=\text{diag}(\lambda_1,\cdots,\lambda_N) \) is an ordered diagonal matrix ( \)\lambda_1\geq\cdots\geq\lambda_N \)). Hence, we can express \( e^{-\eta\bar{\boldsymbol{K}}t} \) in a spectral decomposition form as:
-\begin{eqnarray}
-	e^{-\eta\bar{\boldsymbol{K}}t}&=&\boldsymbol{I}-\eta t\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T+\frac{1}{2!}\eta^2t^2(\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T)^2+\cdots\nonumber\\
-	&=&\boldsymbol{V}e^{-\eta\boldsymbol{\Lambda} t}\boldsymbol{V}^T.
-\end{eqnarray}
-After rearrangement, Equation~\ref{smode} can be reformulated as:
-\begin{eqnarray}\label{pdiff}
-	\resizebox{.9\hsize}{!}{ \)\boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N=\boldsymbol{D^t}\boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \)},
-\end{eqnarray}
-%e^{-\eta\boldsymbol{\Lambda} t}\boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N\nonumber\\
-with a diagonal matrix \( \boldsymbol{D^t}=\text{diag}(e^{-\eta\lambda_1 t},\cdots,e^{-\eta\lambda_N t}) \). To be specific, \( \left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) refers to the difference vector between \( f_{\theta^0} \) and \( f^* \) at the initial time, which is evaluated at all training examples, whereas \( \left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) denotes the difference vector at time \( t \). Additionally, \( \boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) can be interpreted as the projection of the difference vector onto eigenvectors (\ie, the principal components) at the beginning, while \( \boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) represents the projection at time \( t \). Figure~\ref{sde} provides a lucid illustration in a 2D function coordinate system.
+                    Due to the symmetric and positive definite nature of \( \bar{\boldsymbol{K}} \), it can be orthogonally diagonalized as \( \bar{\boldsymbol{K}}=\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T \) based on spectral theorem <a href="http://ir.mksu.ac.ke/bitstream/handle/123456780/6014/10.1007_978-1-4614-7116-5.pdf?sequence=1">(Hall, 2013)</a>, where \( \boldsymbol{V}=[\boldsymbol{v}_1,\cdots,\boldsymbol{v}_N] \) with column vectors \( \boldsymbol{v}_i \) representing eigenvectors corresponding to eigenvalue \( \lambda_i \), and \( \boldsymbol{\Lambda}=\text{diag}(\lambda_1,\cdots,\lambda_N) \) is an ordered diagonal matrix ( \)\lambda_1\geq\cdots\geq\lambda_N \)). Hence, we can express \( e^{-\eta\bar{\boldsymbol{K}}t} \) in a spectral decomposition form as:
+			\begin{eqnarray}
+				e^{-\eta\bar{\boldsymbol{K}}t}&=&\boldsymbol{I}-\eta t\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T+\frac{1}{2!}\eta^2t^2(\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T)^2+\cdots\nonumber\\
+				&=&\boldsymbol{V}e^{-\eta\boldsymbol{\Lambda} t}\boldsymbol{V}^T.
+			\end{eqnarray}
+		    After rearrangement, the ODE solution can be reformulated as:
+			\begin{eqnarray}
+				\boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N=\boldsymbol{D^t}\boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N,
+			\end{eqnarray}
+		    with a diagonal matrix \( \boldsymbol{D^t}=\text{diag}(e^{-\eta\lambda_1 t},\cdots,e^{-\eta\lambda_N t}) \). To be specific, \( \left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) refers to the difference vector between \( f_{\theta^0} \) and \( f^* \) at the initial time, which is evaluated at all training examples, whereas \( \left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) denotes the difference vector at time \( t \). Additionally, \( \boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) can be interpreted as the projection of the difference vector onto eigenvectors (\ie, the principal components) at the beginning, while \( \boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) represents the projection at time \( t \). Figure~\ref{sde} provides a lucid illustration in a 2D function coordinate system.
 
-Based on the above, Equation~\ref{pdiff} reveals the connection between the training set and the convergence of \( f_{\theta^0} \) towards \( f^* \), which indicates that when evaluated on the training set, the discrepancy between \( f_{\theta^0} \) and \( f^* \) at the \( i \)-th component exponentially converges to zero at a rate of \( e^{-\eta\lambda_i t} \), which is also dependent on the training set~\cite{jacot2018neural}. Meanwhile, this insight uncovers the reason for the sluggish convergence that empirically arises after training for an extended period, wherein small eigenvalues hinder the speed of convergence when continuously training on a static training set.
+		    Based on the above, it reveals the connection between the training set and the convergence of \( f_{\theta^0} \) towards \( f^* \), which indicates that when evaluated on the training set, the discrepancy between \( f_{\theta^0} \) and \( f^* \) at the \( i \)-th component exponentially converges to zero at a rate of \( e^{-\eta\lambda_i t} \), which is also dependent on the training set <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Meanwhile, this insight uncovers the reason for the sluggish convergence that empirically arises after training for an extended period, wherein small eigenvalues hinder the speed of convergence when continuously training on a static training set.
                 </p>
 <!--                 <p style="text-align:center;">
                     <image src="img/gamma.png" height="30px" class="center">
