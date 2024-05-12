@@ -98,6 +98,12 @@
 	    margin-bottom: 10px;
 	  }
 	</style>
+
+	<style>
+	  .indented {
+	    padding-left: 20px;
+	  }
+	</style>
     
 </head>
 
@@ -341,11 +347,12 @@
 		    <p style="text-align:center;">
 			<figure>
 				<image src="proj.png" style="display: block; margin: 0 auto;" height="300px">
-				<figcaption>An illustration of the spectral understanding in a 2D function coordinate system (i.e., RKHS) with the \( \{K(\boldsymbol{x}_i,\cdot)\}_2 \) basis. The basis can be non-orthogonal if \( K(\boldsymbol{x}_i,\boldsymbol{x}_j)\neq0 \) for \( i\neq j \). The coordinate of \( f_{\theta^t}-f^* \) represents its projection on each axis, which is given by \( \langle\left(f_{\theta^t}-f^*\right),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]^T_2 \), and that of \( K(\boldsymbol{x}_\dagger,\cdot) \) is \( \langle K(\boldsymbol{x}_\dagger,\cdot),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[K(\boldsymbol{x}_\dagger,\boldsymbol{x}_i)\right]^T_2 \), which is stored in the \( \dagger \)-th row of \( \boldsymbol{K} \). Assuming \( \bar{\boldsymbol{K}}=\left[\begin{array}{cc}
+				<figcaption><p class="text-justify">
+					An illustration of the spectral understanding in a 2D function coordinate system (i.e., RKHS) with the \( \{K(\boldsymbol{x}_i,\cdot)\}_2 \) basis. The basis can be non-orthogonal if \( K(\boldsymbol{x}_i,\boldsymbol{x}_j)\neq0 \) for \( i\neq j \). The coordinate of \( f_{\theta^t}-f^* \) represents its projection on each axis, which is given by \( \langle\left(f_{\theta^t}-f^*\right),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]^T_2 \), and that of \( K(\boldsymbol{x}_\dagger,\cdot) \) is \( \langle K(\boldsymbol{x}_\dagger,\cdot),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[K(\boldsymbol{x}_\dagger,\boldsymbol{x}_i)\right]^T_2 \), which is stored in the \( \dagger \)-th row of \( \boldsymbol{K} \). Assuming \( \bar{\boldsymbol{K}}=\left[\begin{array}{cc}
 					0.5 & 0.25 \\
 					0.25 & 0.5 \\
 					\end{array}\right] \), the eigenvalues and the respective eigenvectors can be computed as \( \lambda_1=0.75,\lambda_2=0.25 \) and \( \boldsymbol{v}_1=(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})^T,\boldsymbol{v}_2=(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})^T \), respectively. Assuming \( [f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)]_2 \) equals \( (1,0.5) \), its first and second principal component projections are \( \frac{3\sqrt{2}}{4} \) and \( -\frac{\sqrt{2}}{4} \), respectively. Moreover, the discrepancy between \( f_{\theta^t} \) and \( f^* \) diminishes at a rate of \( e^{-\frac{3\eta t}{4}} \) and  \)e^{-\frac{\eta t}{4}} \) for the first and second principal components, respectively.
-				</figcaption>
+				</p></figcaption>
 			</figure>
                     </p>
 		    
@@ -393,13 +400,15 @@
                 </h4>
 		<figure>
 			<image src="best_pred_summary.png" style="display: block; margin: 0 auto;" height="150px">
-			<figcaption>Reconstruction quality of SIREN. (b) trains SIREN without (w/o) INT using all pixels. (c) trains it w/o INT using 20% randomly selected pixels. (d) trains it using INT of 20% selection rate. (e) trains it using progressive INT (i.e., increasing selection rate progressively from 20% to 100%).
-			</figcaption>
+			<figcaption><p class="text-justify">
+				Reconstruction quality of SIREN. (b) trains SIREN without (w/o) INT using all pixels. (c) trains it w/o INT using 20% randomly selected pixels. (d) trains it using INT of 20% selection rate. (e) trains it using progressive INT (i.e., increasing selection rate progressively from 20% to 100%).
+			</p></figcaption>
 		</figure>
 		<figure>
 			<image src="sampling_dynamics_camera.png" style="display: block; margin: 0 auto;" height="250px">
-			<figcaption>Progression of INT selected pixels (marked as black) at corresponding iterations when training with INT 20% (top) and 40% (bottom).
-			</figcaption>
+			<figcaption><p class="text-justify">
+				Progression of INT selected pixels (marked as black) at corresponding iterations when training with INT 20% (top) and 40% (bottom).
+			</p></figcaption>
 		</figure>
 	    </div>
         </div>
@@ -478,8 +487,8 @@
                 </h3>
                 <p class="text-justify">
                     Related works (for developing a deeper understanding of INT) are: <br>
-		    [NeurIPS 2023] <a href="https://www.matthewtancik.com/nerf">Nonparametric Teaching for Multiple Learners</a>,<br>
-		    [ICML 2023] <a href="https://www.matthewtancik.com/nerf">Nonparametric Iterative Machine Teaching</a>.<br>
+		    <p class="indented">[NeurIPS 2023] <a href="https://www.matthewtancik.com/nerf">Nonparametric Teaching for Multiple Learners</a>,</p><br>
+		    <p class="indented">[ICML 2023]    <a href="https://www.matthewtancik.com/nerf">Nonparametric Iterative Machine Teaching</a>.<br></p><br>
                 </p>
                 <p class="text-justify">
                     You can find the datasets used in this project here: 
