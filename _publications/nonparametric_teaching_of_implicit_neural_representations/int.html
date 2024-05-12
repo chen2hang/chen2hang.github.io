@@ -59,6 +59,18 @@
     
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+      .theorem {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .theorem h3 {
+        margin-top: 0;
+      }
+    </style>
+    
 </head>
 
 <body>
@@ -206,23 +218,52 @@ We investigate the learning of implicit neural representation (INR) using an ove
                 <p class="text-justify">
                     In this paper, we commence by linking the evolution of an MLP that is based on parametric variation with the one that is perceived from a high-level standpoint of function variation. Next, by solving the formulation of MLP evolution as an ordinary differential equation (ODE), we obtain a deeper understanding of this evolution and the underlying cause for its slow convergence. Lastly, we introduce the greedy INT algorithm, which effectively selects examples with steeper gradients at an adaptive batch size and frequency.
                 </p>
+                <h4>
+                    Evolution of an overparameterized MLP
+                </h4>
                 <p class="text-justify">
-                    The evolution of an overparameterized MLP $f_\theta$ can be converted into a differential form in a comparable manner:
+                    The evolution of an overparameterized MLP $ f_\theta $ can be converted into a differential form in a comparable manner:
                     \begin{eqnarray}
                     	\frac{\partial f_{\theta^t}}{\partial t}= \underbrace{\left\langle\frac{\partial f(\theta^t)}{\partial \theta^t},\frac{\partial \theta^t}{\partial t}\right\rangle}_{(*)} + o\left(\frac{\partial \theta^t}{\partial t}\right).
                     \end{eqnarray}
-                    By substituting the specific parameter evolution into the first-order approximation term $(*)$ of the variational, we obtain
+                    By substituting the specific parameter evolution into the first-order approximation term $ (*) $ of the variational, we obtain
                     \begin{eqnarray}
                     	\frac{\partial f_{\theta^t}}{\partial t}=-\frac{\eta}{N}\left[\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\bm{x}_i}\right]^T_N\cdot\left[K_{\theta^t}(\bm{x}_i,\cdot)\right]_N+ o\left(\frac{\partial \theta^t}{\partial t}\right),
                     \end{eqnarray}
-                    where the symmetric and positive definite neural tangent kernel <a href="https://arxiv.org/abs/1806.07572">Jacot et al. (2018)</a> $K_{\theta^t}(\bm{x}_i,\cdot)=\left\langle\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\cdot,\theta^t},\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\bm{x}_i,\theta^t} \right\rangle$
+                    where the symmetric and positive definite neural tangent kernel <a href="https://arxiv.org/abs/1806.07572">Jacot et al. (2018)</a>  $ K_{\theta^t}(\bm{x}_i,\cdot)=\left\langle\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\cdot,\theta^t},\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\bm{x}_i,\theta^t} \right\rangle $
+                    Let the variational be expressed from a high-level standpoint of function variation. Using functional gradient descent,
+                    \begin{eqnarray}
+                    	\frac{\partial f_{\theta^t}}{\partial t}=-\eta\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\bm{x}_i\}_N),
+                    \end{eqnarray}
+                    where the specific functional gradient is 
+                    \begin{eqnarray}
+                    	\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\bm{x}_i\}_N)=\frac{1}{N}\left[\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\bm{x}_i}\right]^T_N\cdot \left[K({\bm{x}_i},\cdot)\right]_N.
+                    \end{eqnarray}
+                    The asymptotic relationship between NTK and the canonical kernel in functional gradient is presented in Theorem 1 below
                 </p>
+                <div class="theorem">
+                    <h3>Theorem 1</h3>
+                    <p>For a convex loss $ \mathcal{L} $ and a given training set $ \{(\bm{x}_i,y_i)|\bm{x}_i\in\mathcal{X},y_i\in\mathcal{Y}\}_N $, the dynamic NTK obtained through gradient descent on the parameters of an overparameterized MLP achieves point-wise convergence to the canonical kernel present in the dual functional gradient with respect to training examples, that is,
+                	\begin{eqnarray}
+                		\lim_{t\to\infty}K_{\theta^t}({\bm{x}_i},\cdot)=K({\bm{x}_i},\cdot), \forall i \in\mathbb{N}_N.
+                	\end{eqnarray}
+                    </p>
+                </div>
+                <p class="text-justify">
+                    It suggests that NTK serves as a dynamic substitute to the canonical kernel used in functional gradient descent, and the evolution of the MLP through parameter gradient descent aligns with that via functional gradient descent. Through this functional insight and the use of the canonical kernel instead of NTK in conjunction with the remainder, it facilitates the derivation of sufficient reduction concerning $ \mathcal{L} $ in Proposition 2 below,
+                </p>
+                <div class="theorem">
+                    <h3>Proposition 2</h3>
+                    <p>Assuming that the convex loss $\mathcal{L}$ is Lipschitz smooth with a constant $\xi>0$ and the canonical kernel is bounded above by a constant $\zeta>0$, if learning rate $\eta$ satisfies $\eta\leq1/(2\xi\zeta)$, then there exists a sufficient reduction in $\mathcal{L}$ as
+                	\begin{eqnarray}
+                		\frac{\partial \mathcal{L}}{\partial t}\leq -\frac{\eta\zeta}{2}\left(\frac{1}{N}\sum_{i=1}^N\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\bm{x}_i}\right)^2.
+                    \end{eqnarray}
+                    </p>
+                </div>                
 <!--                 <p style="text-align:center;">
                     <image src="img/gamma.png" height="30px" class="center">
                 </p>
-                <p class="text-justify">
-                    to map input coordinates into a higher dimensional feature space before passing them through the network. 
-                </p> -->
+ -->
             </div>
         </div>
             
