@@ -270,7 +270,7 @@
                     Spectral understanding of the evolution
                 </h4>
                 <p class="text-justify">
-                    Using the square loss \( \mathcal{L}(f_\theta(\bm{x}),f^*(\bm{x}))=\frac{1}{2}(f_\theta(\bm{x})-f^*(\bm{x}))^2 \) for illustration, one obtains the variational of \( f_\theta \) from a high-level functional viewpoint:
+                    Using the square loss \( \mathcal{L}(f_\theta(\bm{x}),f^*(\bm{x}))=\frac{1}{2}(f_\theta(\bm{x})-f^*(\bm{x}))^2 \) for illustration <a href="https://proceedings.neurips.cc/paper/2020/file/53c04118df112c13a8c34b38343b9c10-Paper.pdf">(Sitzmann et al., 2020; </a><a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/55053683268957697aa39fba6f231c68-Paper.pdf">Tancik et al., 2020)</a>, one obtains the variational of \( f_\theta \) from a high-level functional viewpoint:
                     \begin{eqnarray}
                     	\frac{\partial f_{\theta^t}}{\partial t}&=&-\eta\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\bm{x}_i\}_N)\nonumber\\
                     	&=&-\frac{\eta}{N}\left[f_{\theta^t}(\bm{x}_i)-f^*(\bm{x}_i)\right]^T_N\cdot \left[K(\bm{x}_i,\cdot)\right]_N.
@@ -281,6 +281,20 @@
                     \begin{eqnarray}
                     	\left[f_{\theta^t}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N=e^{-\eta\bar{\bm{K}}t}\cdot\left[f_{\theta^0}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N,
                     \end{eqnarray}
+                    where \( \bar{\bm{K}}=\bm{K}/N \), and \( \bm{K} \) is a symmetric and positive definite matrix of size \( N\times N \) with entries \( K(\bm{x}_i,\bm{x}_j) \) at the \( i \)-th row and \( j \)-th column.
+                    Due to the symmetric and positive definite nature of \( \bar{\bm{K}} \), it can be orthogonally diagonalized as \( \bar{\bm{K}}=\bm{V}\bm{\Lambda} \bm{V}^T \) based on spectral theorem~\cite{hall2013quantum}, where \( \bm{V}=[\bm{v}_1,\cdots,\bm{v}_N] \) with column vectors \( \bm{v}_i \) representing eigenvectors corresponding to eigenvalue \( \lambda_i \), and \( \bm{\Lambda}=\text{diag}(\lambda_1,\cdots,\lambda_N) \) is an ordered diagonal matrix ( \)\lambda_1\geq\cdots\geq\lambda_N \)). Hence, we can express \( e^{-\eta\bar{\bm{K}}t} \) in a spectral decomposition form as:
+\begin{eqnarray}
+	e^{-\eta\bar{\bm{K}}t}&=&\bm{I}-\eta t\bm{V}\bm{\Lambda} \bm{V}^T+\frac{1}{2!}\eta^2t^2(\bm{V}\bm{\Lambda} \bm{V}^T)^2+\cdots\nonumber\\
+	&=&\bm{V}e^{-\eta\bm{\Lambda} t}\bm{V}^T.
+\end{eqnarray}
+After rearrangement, Equation~\ref{smode} can be reformulated as:
+\begin{eqnarray}\label{pdiff}
+	\resizebox{.9\hsize}{!}{ \)\bm{V}^T\left[f_{\theta^t}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N=\bm{D^t}\bm{V}^T\left[f_{\theta^0}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N \)},
+\end{eqnarray}
+%e^{-\eta\bm{\Lambda} t}\bm{V}^T\left[f_{\theta^0}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N\nonumber\\
+with a diagonal matrix \( \bm{D^t}=\text{diag}(e^{-\eta\lambda_1 t},\cdots,e^{-\eta\lambda_N t}) \). To be specific, \( \left[f_{\theta^0}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N \) refers to the difference vector between \( f_{\theta^0} \) and \( f^* \) at the initial time, which is evaluated at all training examples, whereas \( \left[f_{\theta^t}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N \) denotes the difference vector at time \( t \). Additionally, \( \bm{V}^T\left[f_{\theta^0}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N \) can be interpreted as the projection of the difference vector onto eigenvectors (\ie, the principal components) at the beginning, while \( \bm{V}^T\left[f_{\theta^t}(\bm{x}_i)-f^*(\bm{x}_i)\right]_N \) represents the projection at time \( t \). Figure~\ref{sde} provides a lucid illustration in a 2D function coordinate system.
+
+Based on the above, Equation~\ref{pdiff} reveals the connection between the training set and the convergence of \( f_{\theta^0} \) towards \( f^* \), which indicates that when evaluated on the training set, the discrepancy between \( f_{\theta^0} \) and \( f^* \) at the \( i \)-th component exponentially converges to zero at a rate of \( e^{-\eta\lambda_i t} \), which is also dependent on the training set~\cite{jacot2018neural}. Meanwhile, this insight uncovers the reason for the sluggish convergence that empirically arises after training for an extended period, wherein small eigenvalues hinder the speed of convergence when continuously training on a static training set.
                 </p>
 <!--                 <p style="text-align:center;">
                     <image src="img/gamma.png" height="30px" class="center">
