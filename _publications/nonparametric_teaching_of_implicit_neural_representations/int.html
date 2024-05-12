@@ -195,7 +195,7 @@
                 <h3>
                     Abstract
                 </h3>
-                <image src="figure1.png" style="display: block; margin: 0 auto;" alt="workflow" height="400px"><br>
+                <image src="figure1.png" style="display: block; margin: 0 auto;" alt="workflow" height="450px"><br>
                 <p class="text-justify">
                     We investigate the learning of implicit neural representation (INR) using an overparameterized multilayer perceptron (MLP) via a novel nonparametric teaching perspective. The latter offers an efficient example selection framework for teaching nonparametrically defined (viz. non-closed-form) target functions, such as image functions defined by 2D grids of pixels. To address the costly training of INRs, we propose a paradigm called <b>Implicit Neural Teaching</b> (INT) that treats INR learning as a nonparametric teaching problem, where the given signal being fitted serves as the target function. The teacher then selects signal fragments for iterative training of the MLP to achieve fast convergence. By establishing a connection between MLP evolution through parameter-based gradient descent and that of function evolution through functional gradient descent in nonparametric teaching, we show <i>for the first time</i> that teaching an overparameterized MLP is consistent with teaching a nonparametric learner. This new discovery readily permits a convenient drop-in of nonparametric teaching algorithms to broadly enhance INR training efficiency, demonstrating 30%+ training time savings across various input modalities.
                 </p>
@@ -334,7 +334,7 @@
                     	\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N=e^{-\eta\bar{\boldsymbol{K}}t}\cdot\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N,
                     \end{eqnarray}
                     where \( \bar{\boldsymbol{K}}=\boldsymbol{K}/N \), and \( \boldsymbol{K} \) is a symmetric and positive definite matrix of size \( N\times N \) with entries \( K(\boldsymbol{x}_i,\boldsymbol{x}_j) \) at the \( i \)-th row and \( j \)-th column.
-                    Due to the symmetric and positive definite nature of \( \bar{\boldsymbol{K}} \), it can be orthogonally diagonalized as \( \bar{\boldsymbol{K}}=\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T \) based on spectral theorem <a href="http://ir.mksu.ac.ke/bitstream/handle/123456780/6014/10.1007_978-1-4614-7116-5.pdf?sequence=1">(Hall, 2013)</a>, where \( \boldsymbol{V}=[\boldsymbol{v}_1,\cdots,\boldsymbol{v}_N] \) with column vectors \( \boldsymbol{v}_i \) representing eigenvectors corresponding to eigenvalue \( \lambda_i \), and \( \boldsymbol{\Lambda}=\text{diag}(\lambda_1,\cdots,\lambda_N) \) is an ordered diagonal matrix ( \)\lambda_1\geq\cdots\geq\lambda_N \)). Hence, we can express \( e^{-\eta\bar{\boldsymbol{K}}t} \) in a spectral decomposition form as:
+                    Due to the symmetric and positive definite nature of \( \bar{\boldsymbol{K}} \), it can be orthogonally diagonalized as \( \bar{\boldsymbol{K}}=\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T \) based on spectral theorem <a href="http://ir.mksu.ac.ke/bitstream/handle/123456780/6014/10.1007_978-1-4614-7116-5.pdf?sequence=1">(Hall, 2013)</a>, where \( \boldsymbol{V}=[\boldsymbol{v}_1,\cdots,\boldsymbol{v}_N] \) with column vectors \( \boldsymbol{v}_i \) representing eigenvectors corresponding to eigenvalue \( \lambda_i \), and \( \boldsymbol{\Lambda}=\text{diag}(\lambda_1,\cdots,\lambda_N) \) is an ordered diagonal matrix (\( \lambda_1\geq\cdots\geq\lambda_N \)). Hence, we can express \( e^{-\eta\bar{\boldsymbol{K}}t} \) in a spectral decomposition form as:
 			\begin{eqnarray}
 				e^{-\eta\bar{\boldsymbol{K}}t}&=&\boldsymbol{I}-\eta t\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T+\frac{1}{2!}\eta^2t^2(\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T)^2+\cdots\nonumber\\
 				&=&\boldsymbol{V}e^{-\eta\boldsymbol{\Lambda} t}\boldsymbol{V}^T.
@@ -371,9 +371,12 @@
                 <h4>
                     INT algorithm
                 </h4>
-                <image src="intAlgo.png" style="display: block; margin: 0 auto;" alt="algorithm" height="300px"><br>
+                <image src="intAlgo.png" style="display: block; margin: 0 auto;" alt="algorithm" height="400px"><br>
                 <p class="text-justify">
-                    With the spectral analysis above, a deeper understanding of INT follows. First, we define the entire space as the one spanned by the basis corresponding to the whole training set \( \{K(\boldsymbol{x}_i,\cdot)\}_N \). Similarly, \( \{K(\boldsymbol{x}_i,\cdot)\}_k\subseteq\{K(\boldsymbol{x}_i,\cdot)\}_N \) spans subspaces associated with the selected examples. The eigenvalue of the transformation from the entire space to the subspace of concern (i.e., spanned by \( \{K(\boldsymbol{x}_i,\cdot)\}_k \) associated with selected examples) is one, while it is zero for the subspace without interest <a href="https://ieeexplore.ieee.org/abstract/document/514881">(Watanabe & Katagiri, 1995; </a><a href="https://ieeexplore.ieee.org/abstract/document/492544">Burgess & Van Veen, 1996)</a>. The spectral understanding indicates that \( f_{\theta^t} \) approaches \( f^* \) swiftly at the early stage within the current subspace, owing to the large eigenvalues <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Hence, the INT algorithm can be interpreted as dynamically altering the subspace of interest to fully exploit the period when \( f_{\theta^t} \) approaches \( f^* \) rapidly. Meanwhile, by selecting examples based on Equation~\ref{intalg}, the subspace of interest is precisely the one where \( f_{\theta^t} \) remains significantly distant from \( f^* \). In a nutshell, the INT algorithm, by dynamically altering the subspace of interest, not only maximizes the benefits of the fast convergence stage but also updates \( f_{\theta^t} \) in the most urgent direction towards \( f^* \), thereby saving computational resources compared to training on the entire dataset.
+                    With the spectral analysis above, a deeper understanding of INT follows. First, we define the entire space as the one spanned by the basis corresponding to the whole training set \( \{K(\boldsymbol{x}_i,\cdot)\}_N \). Similarly, \( \{K(\boldsymbol{x}_i,\cdot)\}_k\subseteq\{K(\boldsymbol{x}_i,\cdot)\}_N \) spans subspaces associated with the selected examples. The eigenvalue of the transformation from the entire space to the subspace of concern (i.e., spanned by \( \{K(\boldsymbol{x}_i,\cdot)\}_k \) associated with selected examples) is one, while it is zero for the subspace without interest <a href="https://ieeexplore.ieee.org/abstract/document/514881">(Watanabe & Katagiri, 1995; </a><a href="https://ieeexplore.ieee.org/abstract/document/492544">Burgess & Van Veen, 1996)</a>. The spectral understanding indicates that \( f_{\theta^t} \) approaches \( f^* \) swiftly at the early stage within the current subspace, owing to the large eigenvalues <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Hence, the INT algorithm can be interpreted as dynamically altering the subspace of interest to fully exploit the period when \( f_{\theta^t} \) approaches \( f^* \) rapidly. Meanwhile, by selecting examples based on
+		    \begin{eqnarray}
+		    {\{\bm{x}_i\}_k}^*=\underset{\{\bm{x}_i\}_k\subseteq\{\bm{x}_i\}_N}{\arg\max}\left\|\left[f_{\theta}(\bm{x}_i)-f^*(\bm{x}_i)\right]_k\right\|_2.
+		    \end{eqnarray}, the subspace of interest is precisely the one where \( f_{\theta^t} \) remains significantly distant from \( f^* \). In a nutshell, the INT algorithm, by dynamically altering the subspace of interest, not only maximizes the benefits of the fast convergence stage but also updates \( f_{\theta^t} \) in the most urgent direction towards \( f^* \), thereby saving computational resources compared to training on the entire dataset.
                 </p>
             </div>
         </div>
@@ -386,7 +389,7 @@
                     Experiments and Implementations
                 </h3>
                 <p class="text-justify">
-                    We provide a <b><p style="color: red;">plug-and-play</p></b> <a href="https://github.com/stevolopolis/nmt_inr">package</a> to generally speed up INRs training.<br>
+                    We provide a <b><div style="color: red;">plug-and-play</div></b> <a href="https://github.com/stevolopolis/nmt_inr">package</a> to generally speed up INRs training.<br>
                 </p>
             </div>
         </div>
@@ -488,7 +491,7 @@
                 <p class="text-justify">
                     Related works (for developing a deeper understanding of INT) are: <br>
 		    <p class="indented">[NeurIPS 2023] <a href="https://www.matthewtancik.com/nerf">Nonparametric Teaching for Multiple Learners</a>,</p>
-		    <p class="indented">[ICML 2023]    <a href="https://www.matthewtancik.com/nerf">Nonparametric Iterative Machine Teaching</a>.<br></p>
+		    <p class="indented">[ICML 2023]<span style="color:white">   </span> <a href="https://www.matthewtancik.com/nerf">Nonparametric Iterative Machine Teaching</a>.<br></p>
                 </p>
                 <p class="text-justify">
                     You can find the datasets used in this project here: 
