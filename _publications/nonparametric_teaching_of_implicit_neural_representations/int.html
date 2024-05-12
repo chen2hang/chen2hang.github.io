@@ -232,11 +232,11 @@
                     \begin{eqnarray}
                     	\frac{\partial f_{\theta^t}}{\partial t}= \underbrace{\left\langle\frac{\partial f(\theta^t)}{\partial \theta^t},\frac{\partial \theta^t}{\partial t}\right\rangle}_{(*)} + o\left(\frac{\partial \theta^t}{\partial t}\right).
                     \end{eqnarray}
-                    By substituting the specific parameter evolution into the first-order approximation term <script type="math/tex">(*)</script> of the variational, we obtain
+                    By substituting the specific parameter evolution into the first-order approximation term \( (*) \) of the variational, we obtain
                     \begin{eqnarray}
                     	\frac{\partial f_{\theta^t}}{\partial t}=-\frac{\eta}{N}\left[\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\bm{x}_i}\right]^T_N\cdot\left[K_{\theta^t}(\bm{x}_i,\cdot)\right]_N+ o\left(\frac{\partial \theta^t}{\partial t}\right),
                     \end{eqnarray}
-                    where the symmetric and positive definite neural tangent kernel <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>  <script type="math/tex">K_{\theta^t}(\bm{x}_i,\cdot)=\left\langle\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\cdot,\theta^t},\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\bm{x}_i,\theta^t} \right\rangle</script>
+                    where the symmetric and positive definite neural tangent kernel <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>  \( K_{\theta^t}(\bm{x}_i,\cdot)=\left\langle\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\cdot,\theta^t},\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\bm{x}_i,\theta^t} \right\rangle \)
                     Let the variational be expressed from a high-level standpoint of function variation. Using functional gradient descent,
                     \begin{eqnarray}
                     	\frac{\partial f_{\theta^t}}{\partial t}=-\eta\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\bm{x}_i\}_N),
@@ -249,18 +249,18 @@
                 </p>
                 <div class="theorem">
                     <h3>Theorem 1</h3>
-                    <p>For a convex loss <script type="math/tex">\mathcal{L}</script> and a given training set <script type="math/tex">\{(\bm{x}_i,y_i)|\bm{x}_i\in\mathcal{X},y_i\in\mathcal{Y}\}_N</script>, the dynamic NTK obtained through gradient descent on the parameters of an overparameterized MLP achieves point-wise convergence to the canonical kernel present in the dual functional gradient with respect to training examples, that is,
+                    <p>For a convex loss \( \mathcal{L} \) and a given training set \( \{(\bm{x}_i,y_i)|\bm{x}_i\in\mathcal{X},y_i\in\mathcal{Y}\}_N \), the dynamic NTK obtained through gradient descent on the parameters of an overparameterized MLP achieves point-wise convergence to the canonical kernel present in the dual functional gradient with respect to training examples, that is,
                 	\begin{eqnarray}
                 		\lim_{t\to\infty}K_{\theta^t}({\bm{x}_i},\cdot)=K({\bm{x}_i},\cdot), \forall i \in\mathbb{N}_N.
                 	\end{eqnarray}
                     </p>
                 </div>
                 <p class="text-justify">
-                    It suggests that NTK serves as a dynamic substitute to the canonical kernel used in functional gradient descent, and the evolution of the MLP through parameter gradient descent aligns with that via functional gradient descent. Through this functional insight and the use of the canonical kernel <a href="https://arxiv.org/pdf/1901.07114">(Dou & Liang, 2021)</a> instead of NTK in conjunction with the remainder, it facilitates the derivation of sufficient reduction concerning <script type="math/tex">\mathcal{L}</script> in Proposition 2 below,
+                    It suggests that NTK serves as a dynamic substitute to the canonical kernel used in functional gradient descent, and the evolution of the MLP through parameter gradient descent aligns with that via functional gradient descent. Through this functional insight and the use of the canonical kernel <a href="https://arxiv.org/pdf/1901.07114">(Dou & Liang, 2021)</a> instead of NTK in conjunction with the remainder, it facilitates the derivation of sufficient reduction concerning \( \mathcal{L} \) in Proposition 2 below,
                 </p>
                 <div class="theorem">
                     <h3>Proposition 2</h3>
-                    <p>Assuming that the convex loss <script type="math/tex">\mathcal{L}</script> is Lipschitz smooth with a constant <script type="math/tex">\xi>0</script> and the canonical kernel is bounded above by a constant <script type="math/tex">\zeta>0</script>, if learning rate <script type="math/tex">\eta</script> satisfies <script type="math/tex">\eta\leq1/(2\xi\zeta)</script>, then there exists a sufficient reduction in <script type="math/tex">\mathcal{L}</script> as
+                    <p>Assuming that the convex loss \( \mathcal{L} \) is Lipschitz smooth with a constant \( \xi>0 \) and the canonical kernel is bounded above by a constant \( \zeta>0 \), if learning rate \( \eta \) satisfies \( \eta\leq1/(2\xi\zeta) \), then there exists a sufficient reduction in \( \mathcal{L} \) as
                 	\begin{eqnarray}
                 		\frac{\partial \mathcal{L}}{\partial t}\leq -\frac{\eta\zeta}{2}\left(\frac{1}{N}\sum_{i=1}^N\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\bm{x}_i}\right)^2.
                     \end{eqnarray}
@@ -270,7 +270,7 @@
                     Spectral understanding of the evolution
                 </h4>
                 <p class="text-justify">
-                    Using the square loss <script type="math/tex">\mathcal{L}(f_\theta(\bm{x}),f^*(\bm{x}))=\frac{1}{2}(f_\theta(\bm{x})-f^*(\bm{x}))^2</script> for illustration, one obtains the variational of <script type="math/tex">f_\theta</script> from a high-level functional viewpoint:
+                    Using the square loss \( \mathcal{L}(f_\theta(\bm{x}),f^*(\bm{x}))=\frac{1}{2}(f_\theta(\bm{x})-f^*(\bm{x}))^2 \) for illustration, one obtains the variational of \( f_\theta \) from a high-level functional viewpoint:
                     \begin{eqnarray}
                     	\frac{\partial f_{\theta^t}}{\partial t}&=&-\eta\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\bm{x}_i\}_N)\nonumber\\
                     	&=&-\frac{\eta}{N}\left[f_{\theta^t}(\bm{x}_i)-f^*(\bm{x}_i)\right]^T_N\cdot \left[K(\bm{x}_i,\cdot)\right]_N.
