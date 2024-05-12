@@ -211,6 +211,13 @@
 <!--                         <video id="v0" width="100%" autoplay loop muted controls>
                           <source src="img/lion_none_gauss_v1.mp4" type="video/mp4" />
                         </video> -->
+<!--                 <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/test_sweep_1e-4_5000_more_low.mp4" type="video/mp4" />
+                </video>
+                <p class="text-justify">
+                    Recent theoretical work describes the behavior of deep networks in terms of the <em>neural tangent kernel</em> (NTK), showing that the network's predictions over the course of training closely track the outputs of kernel regression problem being optimized by gradient descent. In our paper, we show that using a Fourier feature mapping transforms the NTK into a stationary kernel in our low-dimensional problem domains. In this context, the bandwidth of the NTK limits the spectrum of the recovered function. 
+                </p>
+ -->
                     </div>
                 </div>
             </div>
@@ -319,9 +326,11 @@
 				</figcaption>
 			</figure>
                     </p>
-
+		    
+		    <p style="text-align:center;">
 		    Based on the above, it reveals the connection between the training set and the convergence of \( f_{\theta^0} \) towards \( f^* \), which indicates that when evaluated on the training set, the discrepancy between \( f_{\theta^0} \) and \( f^* \) at the \( i \)-th component exponentially converges to zero at a rate of \( e^{-\eta\lambda_i t} \), which is also dependent on the training set <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Meanwhile, this insight uncovers the reason for the sluggish convergence that empirically arises after training for an extended period, wherein small eigenvalues hinder the speed of convergence when continuously training on a static training set.
-                </p>
+                    </p>
+		</p>
 		    
             </div>
         </div>
@@ -333,18 +342,66 @@
                 <h4>
                     INT algorithm
                 </h4>
-<!--                 <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/test_sweep_1e-4_5000_more_low.mp4" type="video/mp4" />
-                </video>
+                <image src="intAlgo.png" style="display: block; margin: 0 auto;" alt="algorithm" height="300px"><br>
                 <p class="text-justify">
-                    Recent theoretical work describes the behavior of deep networks in terms of the <em>neural tangent kernel</em> (NTK), showing that the network's predictions over the course of training closely track the outputs of kernel regression problem being optimized by gradient descent. In our paper, we show that using a Fourier feature mapping transforms the NTK into a stationary kernel in our low-dimensional problem domains. In this context, the bandwidth of the NTK limits the spectrum of the recovered function. 
+                    With the spectral analysis above, a deeper understanding of INT follows. First, we define the entire space as the one spanned by the basis corresponding to the whole training set \( \{K(\boldsymbol{x}_i,\cdot)\}_N \). Similarly, \( \{K(\boldsymbol{x}_i,\cdot)\}_k\subseteq\{K(\boldsymbol{x}_i,\cdot)\}_N \) spans subspaces associated with the selected examples. The eigenvalue of the transformation from the entire space to the subspace of concern (\ie, spanned by \( \{K(\boldsymbol{x}_i,\cdot)\}_k \) associated with selected examples) is one, while it is zero for the subspace without interest <a href="https://ieeexplore.ieee.org/abstract/document/514881">(Watanabe & Katagiri, 1995; </a><a href="https://ieeexplore.ieee.org/abstract/document/492544">Burgess & Van Veen, 1996)</a>. The spectral understanding indicates that \( f_{\theta^t} \) approaches \( f^* \) swiftly at the early stage within the current subspace, owing to the large eigenvalues <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Hence, the INT algorithm can be interpreted as dynamically altering the subspace of interest to fully exploit the period when \( f_{\theta^t} \) approaches \( f^* \) rapidly. Meanwhile, by selecting examples based on Equation~\ref{intalg}, the subspace of interest is precisely the one where \( f_{\theta^t} \) remains significantly distant from \( f^* \). In a nutshell, the INT algorithm, by dynamically altering the subspace of interest, not only maximizes the benefits of the fast convergence stage but also updates \( f_{\theta^t} \) in the most urgent direction towards \( f^* \), thereby saving computational resources compared to training on the entire dataset.
                 </p>
-                <p class="text-justify">
-                    In the video above, we show how scaling the Fourier feature frequencies provides direct control over the width of the NTK. This allows us to traverse a regime from underfitting (low scale, recovered function too low frequency) to overfitting (high scale, recovered function too high frequency), with the best generalization performance in the middle. Note that each image shown is the output of a different trained MLP network. The networks are supervised on a subsampled 256 x 256 image and tested at the full 512 x 512 resolution.
-                </p> -->
             </div>
         </div>
 
+	<!-- -------------------- Experiments and Implementations --------------------  -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Experiments and Implementations
+                </h3>
+                <p class="text-justify">
+                    We provide a <span class="red"><b>plug-and-play</b></span> <a href="https://proceedings.neurips.cc/paper/2020/file/53c04118df112c13a8c34b38343b9c10-Paper.pdf">package</a> to generally speed up INRs training.<br>
+                </p>
+            </div>
+        </div>
+
+	<!-- -------------------- Toy 2D Cameraman fitting. --------------------  -->
+
+       <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    Toy 2D Cameraman fitting.
+                </h4>
+		<figure>
+			<image src="best_pred_summary.png" height="300px" class="center">
+			<figcaption>Reconstruction quality of SIREN. (b) trains SIREN without (w/o) INT using all pixels. (c) trains it w/o INT using 20% randomly selected pixels. (d) trains it using INT of 20% selection rate. (e) trains it using progressive INT (i.e., increasing selection rate progressively from 20% to 100%).
+			</figcaption>
+		</figure>
+		<figure>
+			<image src="sampling_dynamics_camera.png" height="300px" class="center">
+			<figcaption>Progression of INT selected pixels (marked as black) at corresponding iterations when training with INT 20% (top) and 40% (bottom).
+			</figcaption>
+		</figure>
+	    </div>
+        </div>
+	
+	<!-- -------------------- INT on multiple real-world modalities. --------------------  -->
+
+       <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h4>
+                    INT on multiple real-world modalities.
+                </h4>
+		<figure>
+			<image src="best_pred_summary.png" height="300px" class="center">
+			<figcaption>Reconstruction quality of SIREN. (b) trains SIREN without (w/o) INT using all pixels. (c) trains it w/o INT using 20% randomly selected pixels. (d) trains it using INT of 20% selection rate. (e) trains it using progressive INT (i.e., increasing selection rate progressively from 20% to 100%).
+			</figcaption>
+		</figure>
+		<figure>
+			<image src="sampling_dynamics_camera.png" height="300px" class="center">
+			<figcaption>Progression of INT selected pixels (marked as black) at corresponding iterations when training with INT 20% (top) and 40% (bottom).
+			</figcaption>
+		</figure>
+	    </div>
+        </div>
+	<!-- -------------------- Related links --------------------  -->
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
