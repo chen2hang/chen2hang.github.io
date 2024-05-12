@@ -56,6 +56,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
     
     <script src="js/app.js"></script> -->
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -168,7 +171,7 @@ We investigate the learning of implicit neural representation (INR) using an ove
                                 <td>Arbitrary 1 shown in Figure 10</td>
                                 <td>Arbitrary 1 shown in Figure 10</td>
                                 <td>Arbitrary 1 shown in Figure 10</td>
-                                <td></td>
+                                <td>Arbitrary 1 shown in Figure 10</td>
                             </tr>
                             <tr>
                                 <td>Learnt Image</td>
@@ -186,38 +189,46 @@ We investigate the learning of implicit neural representation (INR) using an ove
                             </tr>
                         </table>
 <!--                         <iframe src="https://www.youtube.com/embed/nVA6K6Sn2S4" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe> -->
+<!--                         <video id="v0" width="100%" autoplay loop muted controls>
+                          <source src="img/lion_none_gauss_v1.mp4" type="video/mp4" />
+                        </video> -->
                     </div>
                 </div>
             </div>
         </div>
 
 
-<!--        <div class="row">
+        <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Training a network without and with Fourier features
+                    Implicit Neural Teaching
                 </h3>
-                <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/lion_none_gauss_v1.mp4" type="video/mp4" />
-                </video>
                 <p class="text-justify">
-                    In this paper, we train MLP networks to learn <em>low dimensional</em> functions, such as the function defined by an image that maps each (x, y) pixel coordinate to an output (r, g, b) color. A standard MLP is not able to learn such functions (blue border image). Simply applying a Fourier feature mapping to the input (x, y) points before passing them to the network allows for rapid convergence (orange border image). 
+                    In this paper, we commence by linking the evolution of an MLP that is based on parametric variation with the one that is perceived from a high-level standpoint of function variation. Next, by solving the formulation of MLP evolution as an ordinary differential equation (ODE), we obtain a deeper understanding of this evolution and the underlying cause for its slow convergence. Lastly, we introduce the greedy INT algorithm, which effectively selects examples with steeper gradients at an adaptive batch size and frequency.
                 </p>
                 <p class="text-justify">
-                    This Fourier feature mapping is very simple. For an input point <b>v</b> (for the example above, (x, y) pixel coordinates) and a random Gaussian matrix <b>B</b>, where each entry is drawn independently from a normal distribution N(0, σ<sup>2</sup>), we use
+                    The evolution of an overparameterized MLP $f_\theta$ can be converted into a differential form in a comparable manner:
+                    \begin{eqnarray}
+                    	\frac{\partial f_{\theta^t}}{\partial t}= \underbrace{\left\langle\frac{\partial f(\theta^t)}{\partial \theta^t},\frac{\partial \theta^t}{\partial t}\right\rangle}_{(*)} + o\left(\frac{\partial \theta^t}{\partial t}\right).
+                    \end{eqnarray}
+                    By substituting the specific parameter evolution into the first-order approximation term $(*)$ of the variational, we obtain
+                    \begin{eqnarray}
+                    	\frac{\partial f_{\theta^t}}{\partial t}=-\frac{\eta}{N}\left[\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\bm{x}_i}\right]^T_N\cdot\left[K_{\theta^t}(\bm{x}_i,\cdot)\right]_N+ o\left(\frac{\partial \theta^t}{\partial t}\right),
+                    \end{eqnarray}
+                    where the symmetric and positive definite neural tangent kernel <a href="https://arxiv.org/abs/1806.07572">Jacot et al. (2018)</a> $K_{\theta^t}(\bm{x}_i,\cdot)=\left\langle\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\cdot,\theta^t},\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\bm{x}_i,\theta^t} \right\rangle$
                 </p>
-                <p style="text-align:center;">
+<!--                 <p style="text-align:center;">
                     <image src="img/gamma.png" height="30px" class="center">
                 </p>
                 <p class="text-justify">
                     to map input coordinates into a higher dimensional feature space before passing them through the network. 
-                </p>
+                </p> -->
             </div>
         </div>
             
 
 
-        <div class="row">
+<!--        <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Fourier features and the Neural Tangent Kernel
