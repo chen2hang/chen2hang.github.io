@@ -47,6 +47,8 @@ function toggleDivIcml2024() {
 }
 </script>
 
+<span style="color:white"><br></span>
+
 --------
 
 <img src="_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="160px" alt="" align="right" />
@@ -75,6 +77,8 @@ function toggleBibNeurips2023() {
   }
 }
 </script>
+
+<span style="color:white"><br></span>
 
 --------
 
