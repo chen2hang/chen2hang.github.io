@@ -20,7 +20,7 @@ redirect_from:
 
 # 📃 Publications
 
-<img src="_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png" width="160px" alt="" align="right" />
+<!--<img src="_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png" width="160px" alt="" align="right" />
 
 **<span style="color:royalblue">[Nonparametric Teaching of Implicit Neural Representations](../_publications/_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Paper.pdf)</span>**  
 __Chen Zhang__\*, Steven Tin Sui Luo\*, Jason Chun Lok Li, Yik-Chung Wu, Ngai Wong  
@@ -50,7 +50,7 @@ function toggleDivIcml2024() {
 <span style="color:white"><br></span>
 
 --------
-
+-->
 <img src="_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="160px" alt="" align="right" />
 
 **<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
@@ -121,7 +121,7 @@ function toggleBibIcml2023() {
 
 # 🖊 Miscellaneous
 
-<span style="text-align:justify; display: inline-block;">I obtained a Master's degree in the department of [Statistics & Actuarial Science from the University of Hong Kong](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics. Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (Qinhuangdao)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.</span>
+<span style="text-align:justify; display: inline-block;"><!-- Currently, I am pursuing the Ph.D. degree in the department of [electrical and electronic engineering](https://www.eee.hku.hk/) from [the University of Hong Kong (HKU)](https://www.hku.hk/), under the supervision of [Prof. Yik-Chung Wu](https://www.eee.hku.hk/~ycwu/) and [Prof. Ngai Wong](https://www.eee.hku.hk/~nwong/). -->I obtained a Master's degree in the department of [Statistics & Actuarial Science from HKU](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics. Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (Qinhuangdao)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.</span>
 
 <span style="text-align:justify; display: inline-block;">I am always passionate about applying statistical and machine learning techniques to real-world problems and contributing to the advancement of artificial intelligence and statistics. I firmly believe that [hard work will always pay off](https://en.wikipedia.org/wiki/Achievement_ideology), and as long as we keep moving forward, we will eventually see the light at the end of the tunnel.</span>
 
