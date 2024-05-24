@@ -127,6 +127,6 @@ function toggleBibIcml2023() {
 
 ***  
 <span style="font-size:10px">&copy; 2023 - {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} | Last updated on {{ site.time | date_to_string }}.</span>  
-<div style="width: 1mm; height: 1mm; margin: 0 auto;">
+<div style="max-height: ; overflow: hidden">
    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=lqNlpUS_HRjhGVIm-Aj62QHiiMwT_hM1rlhdDtyxZ9I&cmo=ff0028&cmn=ffae00'></script>
 </div>
