@@ -58,6 +58,11 @@
   font-size: $type-size-7;
 }
 
+.row_h {
+    		max-height: 0;
+    		overflow: hidden;
+}
+
 .page__footer-follow {
   ul {
     margin: 0;
