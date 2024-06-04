@@ -210,14 +210,14 @@
 		<br>
 		<div class="text-center">
 		    <div style="position:relative;">
-			<button id="show-more-btn"><b><big>Show More</big></b></button>
+			<button id="show-more-btn"><b><big><span style="color:orange;">Show More</span></big></b></button>
 		    </div>	
 		</div>
 		<br>
 		<div id="more-gifs" class="gif-container" style="display: none;">
-		    <img src="demos/kodim05.gif" >
-		    <img src="demos/kodim14.gif" >
-		    <img src="demos/kodim22.gif" >
+		    <img src="demos/kodim01.gif" >
+		    <img src="demos/kodim02.gif" >
+		    <img src="demos/kodim03.gif" >
 		    <img src="demos/kodim24.gif" ><br>
 		    <img src="demos/kodim05.gif" >
 		    <img src="demos/kodim14.gif" >
@@ -233,10 +233,10 @@
 			showMoreBtn.addEventListener('click', function() {
 			  if (moreGifsContainer.style.display === 'none') {
 			    moreGifsContainer.style.display = 'block';
-			    showMoreBtn.textContent = 'Collapse'; 
+			    showMoreBtn.innerHTML = '<b><big><span style="color:orange;">Collapse</span></big></b>';
 			  } else {
 			    moreGifsContainer.style.display = 'none';
-			    showMoreBtn.textContent = 'Show More'; 
+			    showMoreBtn.innerHTML = '<b><big><span style="color:orange;">Show More</span></big></b>';
 			  }
 			});
 		</script>
