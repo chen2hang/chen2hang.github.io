@@ -87,8 +87,7 @@
 	      justify-content: space-between;
 	    }
 	    .gif-container img {
-	      margin: 0 5px 5px 0;
-	      width: calc(25% - 5px);
+	      width: 24%;
 	      height: auto;
 	    }
 	</style>
@@ -209,7 +208,7 @@
                 </div>
 		<div class="text-center">
 		    <div style="position:relative;">
-			<button id="show-more-btn">Show More</button>
+			<button id="show-more-btn"><b>Show More</b></button>
 		    </div>	
 		</div>
 		<br>
@@ -231,13 +230,11 @@
 			
 			showMoreBtn.addEventListener('click', function() {
 			  if (moreGifsContainer.style.display === 'none') {
-			    // 当点击按钮时，显示更多 GIF 容器
 			    moreGifsContainer.style.display = 'block';
-			    showMoreBtn.textContent = 'Collapse'; // 修改按钮文本
+			    showMoreBtn.textContent = 'Collapse'; 
 			  } else {
-			    // 再次点击时，隐藏更多 GIF 容器
 			    moreGifsContainer.style.display = 'none';
-			    showMoreBtn.textContent = 'Show More'; // 恢复按钮文本
+			    showMoreBtn.textContent = 'Show More'; 
 			  }
 			});
 		</script>
