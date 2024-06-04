@@ -10,52 +10,20 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <base href="/"> -->
-
-        <!--FACEBOOK-->
-<!--     <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="512"> -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chen2hang.github.io/_publications/nonparametric_teaching_of_implicit_neural_representations/"/>
     <meta property="og:title" content="Implicit Neural Teaching" />
     <meta property="og:description" content="Project page for Nonparametric Teaching of Implicit Neural Representations." />
 
-        <!--TWITTER-->
-<!--     <meta name="twitter:card" content="summary_large_image" /> -->
     <meta name="twitter:title" content="Implicit Neural Teaching" />
     <meta name="twitter:description" content="Project page for Nonparametric Teaching of Implicit Neural Representations." />
-<!--     <meta name="twitter:image" content="https://people.eecs.berkeley.edu/~bmild/fourfeat/img/foxface.jpg" /> -->
 
 
-<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-  <link rel="icon" type="image/png" href="/images/site_icon_hku.png">
-    <!-- Place favicon.ico in the root directory -->
-
+    <link rel="icon" type="image/png" href="/images/site_icon_hku.png">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
-<!--     <link rel="stylesheet" href="css/app.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-110862391-1');
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-    
-    <script src="js/app.js"></script> -->
     
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -237,9 +205,27 @@
                         Each column represents an individual image, with the arrangement from top to bottom consisting of the Target, the Learnt, and the Selected Fragments (highlighted in white).
                     </div>
                 </div>
-            </div>
+		<div style="position:relative;">
+		    <button id="show-more-btn">Show More</button>
+		</div>
+		<div id="more-gifs" class="gif-container">
+		    <img src="demos/kodim05.gif" >
+		    <img src="demos/kodim14.gif" >
+		    <img src="demos/kodim22.gif" >
+		    <img src="demos/kodim24.gif" >
+		    <img src="demos/kodim05.gif" >
+		    <img src="demos/kodim14.gif" >
+		    <img src="demos/kodim22.gif" >
+		    <img src="demos/kodim24.gif" >
+		</div>
+	    </div>
         </div>
-
+		<script>
+		document.getElementById('show-more-btn').addEventListener('click', function() {
+		  document.getElementById('more-gifs').style.display = 'block';
+		  this.style.display = 'none';
+		});
+		</script>
 	<!-- -------------------- Implicit Neural Teaching --------------------  -->
 
 
@@ -527,12 +513,15 @@
         </div>
     </div>
 
-	
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-		    <footer>
-		        <p>Send feedback and questions to <a href="https://chen2hang.github.io">Chen Zhang</a></p>
-		    </footer>
+			<div class="text-center">
+		                    <div style="position:relative;">
+					    <footer>
+					        <p>Send feedback and questions to <a href="https://chen2hang.github.io">Chen Zhang</a></p>
+					    </footer>
+		                    </div>
+		        </div>
 		</div>
 	</div>
 	
