@@ -208,11 +208,11 @@
 		<div style="position:relative;">
 		    <button id="show-more-btn">Show More</button>
 		</div>
-		<div id="more-gifs" class="gif-container">
+		<div id="more-gifs" class="gif-container" style="display: none;">
 		    <img src="demos/kodim05.gif" >
 		    <img src="demos/kodim14.gif" >
 		    <img src="demos/kodim22.gif" >
-		    <img src="demos/kodim24.gif" >
+		    <img src="demos/kodim24.gif" ><br>
 		    <img src="demos/kodim05.gif" >
 		    <img src="demos/kodim14.gif" >
 		    <img src="demos/kodim22.gif" >
@@ -221,10 +221,20 @@
 	    </div>
         </div>
 		<script>
-		document.getElementById('show-more-btn').addEventListener('click', function() {
-		  document.getElementById('more-gifs').style.display = 'block';
-		  this.style.display = 'none';
-		});
+			var showMoreBtn = document.getElementById('show-more-btn');
+			var moreGifsContainer = document.getElementById('more-gifs');
+			
+			showMoreBtn.addEventListener('click', function() {
+			  if (moreGifsContainer.style.display === 'none') {
+			    // 当点击按钮时，显示更多 GIF 容器
+			    moreGifsContainer.style.display = 'block';
+			    showMoreBtn.textContent = 'Collapse'; // 修改按钮文本
+			  } else {
+			    // 再次点击时，隐藏更多 GIF 容器
+			    moreGifsContainer.style.display = 'none';
+			    showMoreBtn.textContent = 'Show More'; // 恢复按钮文本
+			  }
+			});
 		</script>
 	<!-- -------------------- Implicit Neural Teaching --------------------  -->
 
@@ -515,7 +525,7 @@
 
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="text-center">
+			<div class="text-right">
 		                    <div style="position:relative;">
 					    <footer>
 					        <p>Send feedback and questions to <a href="https://chen2hang.github.io">Chen Zhang</a></p>
