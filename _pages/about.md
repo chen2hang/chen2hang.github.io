@@ -48,13 +48,13 @@ function toggleDivIcml2024() {
 }
 </script>
 
-
 </div>
 </div>
 
---------
 
-<img src="_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="160px" alt="" align="right" />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
 
 **<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
@@ -81,11 +81,13 @@ function toggleBibNeurips2023() {
 }
 </script>
 
-<span style="color:white"><br></span>
+</div>
+</div>
 
---------
 
-<img src="_publications/nonparametric_iterative_machine_teaching/comp.png" width="160px" alt="" align="right" />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2023</div><img src='_publications/nonparametric_iterative_machine_teaching/comp.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
 
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
@@ -112,7 +114,10 @@ function toggleBibIcml2023() {
 }
 </script>
 
-<span style="color:white"><br></span>
+</div>
+</div>
+
+
 
 # 🏆 Honors
 
