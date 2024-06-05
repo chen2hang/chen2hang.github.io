@@ -20,7 +20,8 @@ redirect_from:
 
 # 📃 Publications
 
-<img src="_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png" width="160px" alt="" align="right" />
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
 
 **<span style="color:royalblue">[Nonparametric Teaching of Implicit Neural Representations](../_publications/_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Paper.pdf)</span>**  
 __Chen Zhang__\*, Steven Tin Sui Luo\*, Jason Chun Lok Li, Yik-Chung Wu, Ngai Wong  
@@ -47,7 +48,9 @@ function toggleDivIcml2024() {
 }
 </script>
 
-<span style="color:white"><br></span>
+
+</div>
+</div>
 
 --------
 
