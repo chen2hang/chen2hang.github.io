@@ -20,9 +20,10 @@ redirect_from:
 
 # 📃 Publications
 
-<img src="_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png" width="160px" alt="" align="right" />
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='_publications/nonparametric_teaching_of_implicit_neural_representations/figure1.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
 
-**<span style="color:royalblue">[Nonparametric Teaching of Implicit Neural Representations](../_publications/_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Paper.pdf)</span>**  
+**<span style="color:royalblue">[Nonparametric Teaching of Implicit Neural Representations](../_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Paper.pdf)</span>**  
 __Chen Zhang__\*, Steven Tin Sui Luo\*, Jason Chun Lok Li, Yik-Chung Wu, Ngai Wong  
 <span style="color:red; font-style:italic;">ICML 2024</span>  
 [arXiv](https://arxiv.org/abs/2405.10531v1) | [<span style="color:orange;">project page</span>](https://chen2hang.github.io/_publications/nonparametric_teaching_of_implicit_neural_representations/int.html) | [code](https://github.com/stevolopolis/nmt_inr) | [poster](../_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Poster.pdf) | [slides](../_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Slides.pdf) | <span onclick="toggleDivIcml2024()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
@@ -47,11 +48,13 @@ function toggleDivIcml2024() {
 }
 </script>
 
-<span style="color:white"><br></span>
+</div>
+</div>
 
---------
 
-<img src="_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png" width="160px" alt="" align="right" />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2023</div><img src='_publications/nonparametric_teaching_for_multiple_learners/CmpaST.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
 
 **<span style="color:royalblue">[Nonparametric Teaching for Multiple Learners](../_publications/nonparametric_teaching_for_multiple_learners/NeurIPS_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
@@ -78,11 +81,13 @@ function toggleBibNeurips2023() {
 }
 </script>
 
-<span style="color:white"><br></span>
+</div>
+</div>
 
---------
 
-<img src="_publications/nonparametric_iterative_machine_teaching/comp.png" width="160px" alt="" align="right" />
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2023</div><img src='_publications/nonparametric_iterative_machine_teaching/comp.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
 
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Paper.pdf)</span>**  
 __Chen Zhang__, Xiaofeng Cao, Weiyang Liu, Ivor Tsang, James Kwok  
@@ -109,7 +114,10 @@ function toggleBibIcml2023() {
 }
 </script>
 
-<span style="color:white"><br></span>
+</div>
+</div>
+
+
 
 # 🏆 Honors
 

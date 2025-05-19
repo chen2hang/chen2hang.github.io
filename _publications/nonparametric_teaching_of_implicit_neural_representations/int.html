@@ -10,52 +10,20 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <base href="/"> -->
-
-        <!--FACEBOOK-->
-<!--     <meta property="og:image" content="">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1024">
-    <meta property="og:image:height" content="512"> -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://chen2hang.github.io/_publications/nonparametric_teaching_of_implicit_neural_representations/"/>
     <meta property="og:title" content="Implicit Neural Teaching" />
     <meta property="og:description" content="Project page for Nonparametric Teaching of Implicit Neural Representations." />
 
-        <!--TWITTER-->
-<!--     <meta name="twitter:card" content="summary_large_image" /> -->
     <meta name="twitter:title" content="Implicit Neural Teaching" />
     <meta name="twitter:description" content="Project page for Nonparametric Teaching of Implicit Neural Representations." />
-<!--     <meta name="twitter:image" content="https://people.eecs.berkeley.edu/~bmild/fourfeat/img/foxface.jpg" /> -->
 
 
-<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-  <link rel="icon" type="image/png" href="/images/site_icon_hku.png">
-    <!-- Place favicon.ico in the root directory -->
-
+    <link rel="icon" type="image/png" href="/images/site_icon_hku.png">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
-<!--     <link rel="stylesheet" href="css/app.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-110862391-1');
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-    
-    <script src="js/app.js"></script> -->
     
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -111,7 +79,19 @@
     		overflow: hidden;
 	}
 	</style>
-    
+
+	<style>
+	    .gif-container {
+	      display: flex;
+	      flex-wrap: wrap;
+	      justify-content: space-between;
+	    }
+	    .gif-container img {
+	      width: 24%;
+	      height: auto;
+	      margin-bottom: 5px;
+	    }
+	</style>
 </head>
 
 <body>
@@ -186,7 +166,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/stevolopolis/nmt_inr">
+                            <a href="https://github.com/chen2hang/INT_NonparametricTeaching">
                             <image src="github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -210,55 +190,56 @@
         </div>
 
 
-	<!-- -------------------- Overview Video --------------------  -->
+	<!-- -------------------- Overview Demos --------------------  -->
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Overview Video
+                    Overview Demos
                 </h3>
+		<div class="gif-container">
+		    <img src="demos/kodim05.gif" >
+		    <img src="demos/kodim14.gif" >
+		    <img src="demos/kodim22.gif" >
+		    <img src="demos/kodim24.gif" >
+		</div>
                 <div class="text-center">
                     <div style="position:relative;">
-                        <h4>A video showing results</h4>
-			    Coming soon.
-<!--                         <table border="1">
-                            <tr>
-                                <td>Target Image</td>
-                                <td>Arbitrary 1 shown in Figure 10</td>
-                                <td>Arbitrary 1 shown in Figure 10</td>
-                                <td>Arbitrary 1 shown in Figure 10</td>
-                                <td>Arbitrary 1 shown in Figure 10</td>
-                            </tr>
-                            <tr>
-                                <td>Learnt Image</td>
-                                <td>..</td>
-                                <td>..</td>
-                                <td>..</td>
-                                <td>..</td>
-                            </tr>
-                            <tr>
-                                <td>Selected Fragments</td>
-                                <td>..</td>
-                                <td>..</td>
-                                <td>..</td>
-                                <td>..</td>
-                            </tr>
-                        </table> -->
-<!--                         <iframe src="https://www.youtube.com/embed/nVA6K6Sn2S4" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe> -->
-<!--                         <video id="v0" width="100%" autoplay loop muted controls>
-                          <source src="img/lion_none_gauss_v1.mp4" type="video/mp4" />
-                        </video> -->
-<!--                 <video id="v0" width="100%" autoplay loop muted controls>
-                  <source src="img/test_sweep_1e-4_5000_more_low.mp4" type="video/mp4" />
-                </video>
-                <p class="text-justify">
-                    Recent theoretical work describes the behavior of deep networks in terms of the <em>neural tangent kernel</em> (NTK), showing that the network's predictions over the course of training closely track the outputs of kernel regression problem being optimized by gradient descent. In our paper, we show that using a Fourier feature mapping transforms the NTK into a stationary kernel in our low-dimensional problem domains. In this context, the bandwidth of the NTK limits the spectrum of the recovered function. 
-                </p>
- -->
+                        <figcaption>Each column represents an individual image, with the arrangement from top to bottom consisting of the Target, the Learnt, and the Selected Fragments (highlighted in white).</figcaption>
                     </div>
                 </div>
-            </div>
+		<br>
+		<div class="text-center">
+		    <div style="position:relative;">
+			<button id="show-more-btn"><b><big><span style="color:orange;">Show More</span></big></b></button>
+		    </div>	
+		</div>
+		<br>
+		<div id="more-gifs" class="gif-container" style="display: none;">
+		    <img src="demos/kodim01.gif" >
+		    <img src="demos/kodim02.gif" >
+		    <img src="demos/kodim03.gif" >
+ 		    <img src="demos/kodim07.gif" ><br>
+		    <img src="demos/kodim13.gif" >
+		    <img src="demos/kodim20.gif" >
+		    <img src="demos/kodim21.gif" >
+		    <img src="demos/kodim23.gif" >
+		</div>
+	    </div>
         </div>
-
+		<script>
+			var showMoreBtn = document.getElementById('show-more-btn');
+			var moreGifsContainer = document.getElementById('more-gifs');
+			
+			showMoreBtn.addEventListener('click', function() {
+			  if (moreGifsContainer.style.display === 'none') {
+			    moreGifsContainer.style.display = 'block';
+			    showMoreBtn.innerHTML = '<b><big><span style="color:orange;">Collapse</span></big></b>';
+			  } else {
+			    moreGifsContainer.style.display = 'none';
+			    showMoreBtn.innerHTML = '<b><big><span style="color:orange;">Show More</span></big></b>';
+			  }
+			});
+		</script>
 	<!-- -------------------- Implicit Neural Teaching --------------------  -->
 
 
@@ -397,7 +378,7 @@
                     Experiments and Implementations
                 </h3>
                 <p class="text-justify">
-                    We provide a <b><span style="color:red;">plug-and-play</span></b> <a href="https://github.com/stevolopolis/nmt_inr">package</a> to generally speed up INRs training.<br>
+                    We provide a <b><span style="color:red;">plug-and-play</span></b> <a href="https://github.com/chen2hang/INT_NonparametricTeaching">package</a> to generally speed up INRs training.<br>
                 </p>
             </div>
         </div>
@@ -542,12 +523,14 @@
                     <br>
                 The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
                 </p>
+		
+		<p style="text-align:right"><em><big>Send feedback and questions to <a href="https://chen2hang.github.io">Chen Zhang</big></em></a></p>
             </div>
         </div>
     </div>
-	<!-- -------------------- Figure1 show --------------------  -->
 
-        <div class="row_h">
+	
+	<div class="row_h">
 		<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=70&t=n&d=G2h_3-zh6N-6s6LwHxii49peiET-TW6gE3xbet389WI&co=ffffff&cmo=ffffff&cmn=ffffff'></script>
 	</div>
 </body>
