@@ -154,8 +154,9 @@ function toggleBibIcml2023() {
 
 # 🏆 Honors
 
+- HKU PGS	[Apr 2024]  
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
-- Excellent Graduate of Hebei Province	[May 2019]  
+- Provincial Outstanding Graduate	[May 2019]  
 - Top Ten College Students of NU	[May 2018]  
 
 <span style="color:white"><br></span>
