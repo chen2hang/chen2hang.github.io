@@ -38,8 +38,8 @@ __Chen Zhang__\*, Weixin Bu\*, Zeyi Ren, Zhengwu Liu, Yik-Chung Wu, Ngai Wong
 </pre>
 </div>
 <script>
-function toggleDivIcml2024() {
-  var bibDiv = document.getElementById("icml2024");
+function toggleDivIcml2025() {
+  var bibDiv = document.getElementById("icml2025");
   if (bibDiv.style.display === "none") {
     bibDiv.style.display = "block";
   } else {
