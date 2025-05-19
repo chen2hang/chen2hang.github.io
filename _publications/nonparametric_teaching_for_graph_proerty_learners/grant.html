@@ -154,25 +154,25 @@
                 <div class="col-md-4 col-md-offset-4 text-center">
                     <ul class="nav nav-pills nav-justified">
                         <li>
-                            <a href="/_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Paper.pdf">
+                            <a href="/_publications/nonparametric_teaching_for_graph_proerty_learners/ICML_2025_Paper.pdf">
                             <image src="paper_thumbnail.png" height="60px">
                                 <h4><strong>Paper</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="/_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Poster.pdf">
+                            <a href="/_publications/nonparametric_teaching_for_graph_proerty_learners/ICML_2025_Poster.pdf">
                             <image src="poster_thumbnail.png" height="60px">
                                 <h4><strong>Poster</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="/_publications/nonparametric_teaching_of_implicit_neural_representations/ICML_2024_Slides.pdf">
+                            <a href="/_publications/nonparametric_teaching_for_graph_proerty_learners/ICML_2025_Slides.pdf">
                             <image src="slides_thumbnail.png" height="60px">
                                 <h4><strong>Slides</strong></h4>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/chen2hang/INT_NonparametricTeaching">
+                            <a href="https://github.com/chen2hang/GraNT_NonparametricTeaching">
                             <image src="github.png" height="60px">
                                 <h4><strong>Code</strong></h4>
                             </a>
@@ -181,7 +181,7 @@
                 </div>
         </div>
 
-	<!-- -------------------- Figure1 show --------------------  -->
+	<!-- -------------------- Abstract --------------------  -->
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -196,287 +196,20 @@
         </div>
 
 
-	<!-- -------------------- Overview Demos --------------------  -->
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Overview Demos
-                </h3>
-		<div class="gif-container">
-		    <img src="demos/kodim05.gif" >
-		    <img src="demos/kodim14.gif" >
-		    <img src="demos/kodim22.gif" >
-		    <img src="demos/kodim24.gif" >
-		</div>
-                <div class="text-center">
-                    <div style="position:relative;">
-                        <figcaption>Each column represents an individual image, with the arrangement from top to bottom consisting of the Target, the Learnt, and the Selected Fragments (highlighted in white).</figcaption>
-                    </div>
-                </div>
-		<br>
-		<div class="text-center">
-		    <div style="position:relative;">
-			<button id="show-more-btn"><b><big><span style="color:orange;">Show More</span></big></b></button>
-		    </div>	
-		</div>
-		<br>
-		<div id="more-gifs" class="gif-container" style="display: none;">
-		    <img src="demos/kodim01.gif" >
-		    <img src="demos/kodim02.gif" >
-		    <img src="demos/kodim03.gif" >
- 		    <img src="demos/kodim07.gif" ><br>
-		    <img src="demos/kodim13.gif" >
-		    <img src="demos/kodim20.gif" >
-		    <img src="demos/kodim21.gif" >
-		    <img src="demos/kodim23.gif" >
-		</div>
-	    </div>
-        </div>
-		<script>
-			var showMoreBtn = document.getElementById('show-more-btn');
-			var moreGifsContainer = document.getElementById('more-gifs');
-			
-			showMoreBtn.addEventListener('click', function() {
-			  if (moreGifsContainer.style.display === 'none') {
-			    moreGifsContainer.style.display = 'block';
-			    showMoreBtn.innerHTML = '<b><big><span style="color:orange;">Collapse</span></big></b>';
-			  } else {
-			    moreGifsContainer.style.display = 'none';
-			    showMoreBtn.innerHTML = '<b><big><span style="color:orange;">Show More</span></big></b>';
-			  }
-			});
-		</script>
-	<!-- -------------------- Implicit Neural Teaching --------------------  -->
+	<!-- -------------------- Poster --------------------  -->
 
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
-                    Implicit Neural Teaching
+                    Poster
                 </h3>
-                <p class="text-justify">
-                    In this paper, we commence by linking the evolution of an MLP that is based on parametric variation with the one that is perceived from a high-level standpoint of function variation. Next, by solving the formulation of MLP evolution as an ordinary differential equation (ODE), we obtain a deeper understanding of this evolution and the underlying cause for its slow convergence. Lastly, we introduce the greedy INT algorithm, which effectively selects examples with steeper gradients at an adaptive batch size and frequency.
-                </p>
+				<figure>
+					<image src="icml_2025_Poster.png" style="display: block; margin: 0 auto;" height="150px">
+				</figure>
             </div>
         </div>
 
-	<!-- -------------------- Evolution of an overparameterized MLP --------------------  -->
-	    
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h4>
-                    Evolution of an overparameterized MLP
-                </h4>
-                <p class="text-justify">
-                    The evolution of an overparameterized MLP \( f_\theta \) can be converted into a differential form in a comparable manner:
-                    \begin{eqnarray}
-                    	\frac{\partial f_{\theta^t}}{\partial t}= \underbrace{\left\langle\frac{\partial f(\theta^t)}{\partial \theta^t},\frac{\partial \theta^t}{\partial t}\right\rangle}_{(*)} + o\left(\frac{\partial \theta^t}{\partial t}\right).
-                    \end{eqnarray}
-                    By substituting the specific parameter evolution into the first-order approximation term \( (*) \) of the variational, we obtain
-                    \begin{eqnarray}
-                    	\frac{\partial f_{\theta^t}}{\partial t}=-\frac{\eta}{N}\left[\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\boldsymbol{x}_i}\right]^T_N\cdot\left[K_{\theta^t}(\boldsymbol{x}_i,\cdot)\right]_N+ o\left(\frac{\partial \theta^t}{\partial t}\right),
-                    \end{eqnarray}
-                    where the symmetric and positive definite neural tangent kernel <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>  \( K_{\theta^t}(\boldsymbol{x}_i,\cdot)=\left\langle\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\cdot,\theta^t},\left.\frac{\partial f_{\theta}}{\partial \theta}\right|_{\boldsymbol{x}_i,\theta^t} \right\rangle \)
-                    Let the variational be expressed from a high-level standpoint of function variation. Using functional gradient descent,
-                    \begin{eqnarray}
-                    	\frac{\partial f_{\theta^t}}{\partial t}=-\eta\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\boldsymbol{x}_i\}_N),
-                    \end{eqnarray}
-                    where the specific functional gradient is 
-                    \begin{eqnarray}
-                    	\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\boldsymbol{x}_i\}_N)=\frac{1}{N}\left[\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\boldsymbol{x}_i}\right]^T_N\cdot \left[K({\boldsymbol{x}_i},\cdot)\right]_N.
-                    \end{eqnarray}
-                    The asymptotic relationship between NTK and the canonical kernel in functional gradient is presented in Theorem 1 below
-                </p>
-                <div class="theorem">
-                    <h3>Theorem 1</h3>
-                    <p>For a convex loss \( \mathcal{L} \) and a given training set \( \{(\boldsymbol{x}_i,y_i)|\boldsymbol{x}_i\in\mathcal{X},y_i\in\mathcal{Y}\}_N \), the dynamic NTK obtained through gradient descent on the parameters of an overparameterized MLP achieves point-wise convergence to the canonical kernel present in the dual functional gradient with respect to training examples, that is,
-                	\begin{eqnarray}
-                		\lim_{t\to\infty}K_{\theta^t}({\boldsymbol{x}_i},\cdot)=K({\boldsymbol{x}_i},\cdot), \forall i \in\mathbb{N}_N.
-                	\end{eqnarray}
-                    </p>
-                </div>
-                <p class="text-justify">
-                    It suggests that NTK serves as a dynamic substitute to the canonical kernel used in functional gradient descent, and the evolution of the MLP through parameter gradient descent aligns with that via functional gradient descent. Through this functional insight and the use of the canonical kernel <a href="https://arxiv.org/pdf/1901.07114">(Dou & Liang, 2021)</a> instead of NTK in conjunction with the remainder, it facilitates the derivation of sufficient reduction concerning \( \mathcal{L} \) in Proposition 2 below,
-                </p>
-                <div class="theorem">
-                    <h3>Proposition 2</h3>
-                    <p>Assuming that the convex loss \( \mathcal{L} \) is Lipschitz smooth with a constant \( \xi>0 \) and the canonical kernel is bounded above by a constant \( \zeta>0 \), if learning rate \( \eta \) satisfies \( \eta\leq1/(2\xi\zeta) \), then there exists a sufficient reduction in \( \mathcal{L} \) as
-                	\begin{eqnarray}
-                		\frac{\partial \mathcal{L}}{\partial t}\leq -\frac{\eta\zeta}{2}\left(\frac{1}{N}\sum_{i=1}^N\left.\frac{\partial\mathcal{L}}{\partial f_{\theta}}\right|_{f_{\theta^t},\boldsymbol{x}_i}\right)^2.
-                    \end{eqnarray}
-                    </p>
-                </div>
-             </div>
-        </div>
-
-	<!-- -------------------- Spectral understanding of the evolution --------------------  -->
-	    
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-               <h4>
-                    Spectral understanding of the evolution
-                </h4>
-                <p class="text-justify">
-                    Using the square loss \( \mathcal{L}(f_\theta(\boldsymbol{x}),f^*(\boldsymbol{x}))=\frac{1}{2}(f_\theta(\boldsymbol{x})-f^*(\boldsymbol{x}))^2 \) for illustration <a href="https://proceedings.neurips.cc/paper/2020/file/53c04118df112c13a8c34b38343b9c10-Paper.pdf">(Sitzmann et al., 2020; </a><a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/55053683268957697aa39fba6f231c68-Paper.pdf">Tancik et al., 2020)</a>, one obtains the variational of \( f_\theta \) from a high-level functional viewpoint:
-                    \begin{eqnarray}
-                    	\frac{\partial f_{\theta^t}}{\partial t}&=&-\eta\mathcal{G}(\mathcal{L},f^*;f_{\theta^t},\{\boldsymbol{x}_i\}_N)\nonumber\\
-                    	&=&-\frac{\eta}{N}\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]^T_N\cdot \left[K(\boldsymbol{x}_i,\cdot)\right]_N.
-                    \end{eqnarray}
-                </p>
-                <p class="text-justify">
-                    Solving this ODE, we obtain:
-                    \begin{eqnarray}\label{smode}
-                    	\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N=e^{-\eta\bar{\boldsymbol{K}}t}\cdot\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N,
-                    \end{eqnarray}
-                    where \( \bar{\boldsymbol{K}}=\boldsymbol{K}/N \), and \( \boldsymbol{K} \) is a symmetric and positive definite matrix of size \( N\times N \) with entries \( K(\boldsymbol{x}_i,\boldsymbol{x}_j) \) at the \( i \)-th row and \( j \)-th column.
-                    Due to the symmetric and positive definite nature of \( \bar{\boldsymbol{K}} \), it can be orthogonally diagonalized as \( \bar{\boldsymbol{K}}=\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T \) based on spectral theorem <a href="http://ir.mksu.ac.ke/bitstream/handle/123456780/6014/10.1007_978-1-4614-7116-5.pdf?sequence=1">(Hall, 2013)</a>, where \( \boldsymbol{V}=[\boldsymbol{v}_1,\cdots,\boldsymbol{v}_N] \) with column vectors \( \boldsymbol{v}_i \) representing eigenvectors corresponding to eigenvalue \( \lambda_i \), and \( \boldsymbol{\Lambda}=\text{diag}(\lambda_1,\cdots,\lambda_N) \) is an ordered diagonal matrix (\( \lambda_1\geq\cdots\geq\lambda_N \)). Hence, we can express \( e^{-\eta\bar{\boldsymbol{K}}t} \) in a spectral decomposition form as:
-			\begin{eqnarray}
-				e^{-\eta\bar{\boldsymbol{K}}t}&=&\boldsymbol{I}-\eta t\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T+\frac{1}{2!}\eta^2t^2(\boldsymbol{V}\boldsymbol{\Lambda} \boldsymbol{V}^T)^2+\cdots\nonumber\\
-				&=&\boldsymbol{V}e^{-\eta\boldsymbol{\Lambda} t}\boldsymbol{V}^T.
-			\end{eqnarray}
-		    After rearrangement, the ODE solution can be reformulated as:
-			\begin{eqnarray}
-				\boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N=\boldsymbol{D^t}\boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N,
-			\end{eqnarray}
-		    with a diagonal matrix \( \boldsymbol{D^t}=\text{diag}(e^{-\eta\lambda_1 t},\cdots,e^{-\eta\lambda_N t}) \). To be specific, \( \left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) refers to the difference vector between \( f_{\theta^0} \) and \( f^* \) at the initial time, which is evaluated at all training examples, whereas \( \left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) denotes the difference vector at time \( t \). Additionally, \( \boldsymbol{V}^T\left[f_{\theta^0}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) can be interpreted as the projection of the difference vector onto eigenvectors (i.e., the principal components) at the beginning, while \( \boldsymbol{V}^T\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_N \) represents the projection at time \( t \). Figure below provides a lucid illustration in a 2D function coordinate system.
-		    <p style="text-align:center;">
-			<figure>
-				<image src="proj.png" style="display: block; margin: 0 auto;" height="300px">
-				<figcaption><p class="text-justify">
-					An illustration of the spectral understanding in a 2D function coordinate system (i.e., RKHS) with the \( \{K(\boldsymbol{x}_i,\cdot)\}_2 \) basis. The basis can be non-orthogonal if \( K(\boldsymbol{x}_i,\boldsymbol{x}_j)\neq0 \) for \( i\neq j \). The coordinate of \( f_{\theta^t}-f^* \) represents its projection on each axis, which is given by \( \langle\left(f_{\theta^t}-f^*\right),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]^T_2 \), and that of \( K(\boldsymbol{x}_\dagger,\cdot) \) is \( \langle K(\boldsymbol{x}_\dagger,\cdot),\left[K(\boldsymbol{x}_i,\cdot)\right]^T_2\rangle_{\mathcal{H}}=\left[K(\boldsymbol{x}_\dagger,\boldsymbol{x}_i)\right]^T_2 \), which is stored in the \( \dagger \)-th row of \( \boldsymbol{K} \). Assuming \( \bar{\boldsymbol{K}}=\left[\begin{array}{cc}
-					0.5 & 0.25 \\
-					0.25 & 0.5 \\
-					\end{array}\right] \), the eigenvalues and the respective eigenvectors can be computed as \( \lambda_1=0.75,\lambda_2=0.25 \) and \( \boldsymbol{v}_1=(\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})^T,\boldsymbol{v}_2=(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})^T \), respectively. Assuming \( [f_{\theta^t}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)]_2 \) equals \( (1,0.5) \), its first and second principal component projections are \( \frac{3\sqrt{2}}{4} \) and \( -\frac{\sqrt{2}}{4} \), respectively. Moreover, the discrepancy between \( f_{\theta^t} \) and \( f^* \) diminishes at a rate of \( e^{-\frac{3\eta t}{4}} \) and  \( e^{-\frac{\eta t}{4}} \) for the first and second principal components, respectively.
-				</p></figcaption>
-			</figure>
-                    </p>
-		    
-		    <p class="text-justify">
-		    Based on the above, it reveals the connection between the training set and the convergence of \( f_{\theta^0} \) towards \( f^* \), which indicates that when evaluated on the training set, the discrepancy between \( f_{\theta^0} \) and \( f^* \) at the \( i \)-th component exponentially converges to zero at a rate of \( e^{-\eta\lambda_i t} \), which is also dependent on the training set <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Meanwhile, this insight uncovers the reason for the sluggish convergence that empirically arises after training for an extended period, wherein small eigenvalues hinder the speed of convergence when continuously training on a static training set.
-                    </p>
-		</p>
-		    
-            </div>
-        </div>
-            
-	<!-- -------------------- INT algorithm --------------------  -->
-
-       <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h4>
-                    INT algorithm
-                </h4>
-                <image src="intAlgo.png" style="display: block; margin: 0 auto;" alt="algorithm" height="400px"><br>
-                <p class="text-justify">
-                    With the spectral analysis above, a deeper understanding of INT follows. First, we define the entire space as the one spanned by the basis corresponding to the whole training set \( \{K(\boldsymbol{x}_i,\cdot)\}_N \). Similarly, \( \{K(\boldsymbol{x}_i,\cdot)\}_k\subseteq\{K(\boldsymbol{x}_i,\cdot)\}_N \) spans subspaces associated with the selected examples. The eigenvalue of the transformation from the entire space to the subspace of concern (i.e., spanned by \( \{K(\boldsymbol{x}_i,\cdot)\}_k \) associated with selected examples) is one, while it is zero for the subspace without interest <a href="https://ieeexplore.ieee.org/abstract/document/514881">(Watanabe & Katagiri, 1995; </a><a href="https://ieeexplore.ieee.org/abstract/document/492544">Burgess & Van Veen, 1996)</a>. The spectral understanding indicates that \( f_{\theta^t} \) approaches \( f^* \) swiftly at the early stage within the current subspace, owing to the large eigenvalues <a href="https://arxiv.org/abs/1806.07572">(Jacot et al. 2018)</a>. Hence, the INT algorithm can be interpreted as dynamically altering the subspace of interest to fully exploit the period when \( f_{\theta^t} \) approaches \( f^* \) rapidly. Meanwhile, by selecting examples based on
-		    \begin{eqnarray}
-		    {\{\boldsymbol{x}_i\}_k}^*=\underset{\{\boldsymbol{x}_i\}_k\subseteq\{\boldsymbol{x}_i\}_N}{\arg\max}\left\|\left[f_{\theta}(\boldsymbol{x}_i)-f^*(\boldsymbol{x}_i)\right]_k\right\|_2,
-		    \end{eqnarray} the subspace of interest is precisely the one where \( f_{\theta^t} \) remains significantly distant from \( f^* \). In a nutshell, the INT algorithm, by dynamically altering the subspace of interest, not only maximizes the benefits of the fast convergence stage but also updates \( f_{\theta^t} \) in the most urgent direction towards \( f^* \), thereby saving computational resources compared to training on the entire dataset.
-                </p>
-            </div>
-        </div>
-
-	<!-- -------------------- Experiments and Implementations --------------------  -->
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Experiments and Implementations
-                </h3>
-                <p class="text-justify">
-                    We provide a <b><span style="color:red;">plug-and-play</span></b> <a href="https://github.com/chen2hang/INT_NonparametricTeaching">package</a> to generally speed up INRs training.<br>
-                </p>
-            </div>
-        </div>
-
-	<!-- -------------------- Toy 2D Cameraman fitting. --------------------  -->
-
-       <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h4>
-                    Toy 2D Cameraman fitting.
-                </h4>
-		<figure>
-			<image src="best_pred_summary.png" style="display: block; margin: 0 auto;" height="150px">
-			<figcaption><p class="text-justify">
-				Reconstruction quality of SIREN. (b) trains SIREN without (w/o) INT using all pixels. (c) trains it w/o INT using 20% randomly selected pixels. (d) trains it using INT of 20% selection rate. (e) trains it using progressive INT (i.e., increasing selection rate progressively from 20% to 100%).
-			</p></figcaption>
-		</figure>
-		<figure>
-			<image src="sampling_dynamics_camera.png" style="display: block; margin: 0 auto;" height="250px">
-			<figcaption><p class="text-justify">
-				Progression of INT selected pixels (marked as black) at corresponding iterations when training with INT 20% (top) and 40% (bottom).
-			</p></figcaption>
-		</figure>
-	    </div>
-        </div>
-	
-	<!-- -------------------- INT on multiple real-world modalities. --------------------  -->
-
-       <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h4>
-                    INT on multiple real-world modalities.
-                </h4>
-		<table>
-		  <thead>
-		    <tr>
-		      <th>INT</th>
-		      <th>Modality</th>
-		      <th>Time (s)</th>
-		      <th>PSNR(dB) / IoU(%) ↑</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-		    <tr>
-		      <td rowspan="4"><span style="font-size: 24px;">✗</span></td>
-		      <td>Audio</td>
-		      <td>23.05</td>
-		      <td>48.38 ± 3.50</td>
-		    </tr>
-		    <tr>
-		      <td>Image</td>
-		      <td>345.22</td>
-		      <td>36.09 ± 2.51</td>
-		    </tr>
-		    <tr>
-		      <td>Megapixel</td>
-		      <td>16.78K</td>
-		      <td>31.82</td>
-		    </tr>
-		    <tr>
-		      <td>3D Shape</td>
-		      <td>144.58</td>
-		      <td>97.07 ± 0.84</td>
-		    </tr>
-		    <tr>
-		      <td rowspan="4"><span style="font-size: 24px;">✓</span></td>
-		      <td>Audio</td>
-		      <td>15.76 (-31.63%)</td>
-		      <td>48.15 ± 3.39</td>
-		    </tr>
-		    <tr>
-		      <td>Image</td>
-		      <td>211.04 (-38.88%)</td>
-		      <td>36.97 ± 3.59</td>
-		    </tr>
-		    <tr>
-		      <td>Megapixel</td>
-		      <td>11.87K (-29.26%)</td>
-		      <td>33.01</td>
-		    </tr>
-		    <tr>
-		      <td>3D Shape</td>
-		      <td>93.19 (-35.54%)</td>
-		      <td>96.68 ± 0.83</td>
-		    </tr>
-		  </tbody>
-		</table>
-		
-		<p>Signal fitting results for different data modalities. The encoding time is measured excluding data I/O latency.</p>
-	    </div>
-        </div>
-	
 	<!-- -------------------- Related links --------------------  -->
 
         <div class="row">
@@ -486,15 +219,9 @@
                 </h3>
                 <p class="text-justify">
                     Related works (for developing a deeper understanding of INT) are: <br>
-		    <p class="indented">[NeurIPS 2023] <a href="https://www.matthewtancik.com/nerf">Nonparametric Teaching for Multiple Learners</a>,</p>
-		    <p class="indented">[ICML 2023] <a href="https://www.matthewtancik.com/nerf">Nonparametric Iterative Machine Teaching</a>.<br></p>
-                </p>
-                <p class="text-justify">
-                    You can find the datasets used in this project here: 
-		    <a href="https://peerj.com/articles/453/?report=reader&utm_source=TrendMD&utm_campaign=PeerJ_TrendMD_1&utm_medium=TrendMD">Cameraman</a>,
-                    <a href="http://r0k.us/graphics/kodak/">Kodak</a>,
-                    <a href="https://solarsystem.nasa.gov/resources/933/true-colors-of-pluto/?category=planets/dwarf-planets_pluto">Pluto image</a>,
-                    <a href="https://graphics.stanford.edu/data/3Dscanrep/">Stanford 3D Scanning Repository dataset</a>.
+		    <p class="indented">[ICML 2024] <a href="https://arxiv.org/abs/2405.10531v1">Nonparametric Teaching of Implicit Neural Representations</a>,</p>
+			<p class="indented">[NeurIPS 2023] <a href="https://arxiv.org/abs/2311.10318">Nonparametric Teaching for Multiple Learners</a>,</p>
+		    <p class="indented">[ICML 2023] <a href="https://arxiv.org/abs/2306.03007">Nonparametric Iterative Machine Teaching</a>.<br></p>
                 </p>
             </div>
         </div>
@@ -507,11 +234,11 @@
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly style="width: 550px; height: 150px;">
-@InProceedings{zhang2024ntinr,
-    title={Nonparametric Teaching of Implicit Neural Representations},
-    author={Zhang, Chen and Luo, Steven and Li, Jason and Wu, Yik-Chung and Wong, Ngai},
-    booktitle = {ICML},
-    year={2024}
+@inproceedings{zhang2025nonparametric,
+  title={Nonparametric Teaching  for Graph Property Learners},
+  author={Zhang, Chen and Bu, Weixin and Ren, Zeyi and Liu, Zhengwu and Wu, Yik-Chung and Wong, Ngai},
+  booktitle={ICML},
+  year={2025}
 }</textarea>
                 </div>
             </div>
@@ -523,9 +250,9 @@
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                We thank all anonymous reviewers for their constructive feedback to improve this project.
+                We thank all anonymous reviewers for their constructive feedback, which helped improve our paper. We also thank Yikun Wang for his helpful discussions.
                     <br>
-                This work was supported by the Theme-based Research Scheme (TRS) project T45-701/22-R, and in part by ACCESS – AI Chip Center for Emerging Smart Systems, sponsored by InnoHK funding, Hong Kong SAR.
+                This work was supported in part by the Theme-based Research Scheme (TRS) project T45-701/22-R of the Research Grants Council (RGC), Hong Kong SAR.
                     <br>
                 The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
                 </p>
@@ -537,7 +264,7 @@
 
 	
 	<div class="row_h">
-		<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=70&t=n&d=G2h_3-zh6N-6s6LwHxii49peiET-TW6gE3xbet389WI&co=ffffff&cmo=ffffff&cmn=ffffff'></script>
+		<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=P_DqQem2bJc8S2-Aeh2sLM_GDgIogqhQesYbcf-nzts"></script>
 	</div>
 </body>
 </html>
