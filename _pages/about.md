@@ -14,7 +14,7 @@ redirect_from:
 
 <span style="text-align:justify; display: inline-block;">My research interests lie in the areas of [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory), particularly [nonparametric teaching](https://arxiv.org/abs/2306.03007) (NT). Specifically, my current research focuses on developing principle guided strategies for NT and expanding the applicability of NT.</span>
 
-<span style="text-align:justify; display: inline-block;"> Please feel free to [Email](mailto:czhang6@connect.hku.hk) (u3567831[at]connect.hku.hk is discarded) me if you have any questions, feedback, or opportunities you'd like to discuss. </span>
+<span style="text-align:justify; display: inline-block;"> Please feel free to [Email](mailto:czhang6@connect.hku.hk) (<del>u3567831[at]connect.hku.hk</del> is discarded) me if you have any questions, feedback, or opportunities you'd like to discuss. </span>
 
 <span style="color:white"><br></span>
 
