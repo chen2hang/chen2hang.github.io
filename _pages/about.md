@@ -18,7 +18,8 @@ redirect_from:
 
 <span style="color:white"><br></span>
 
-# 📃 Publications
+# 📃 First Author Publications
+<p><a href="https://scholar.google.com/citations?user=7CkE3C4AAAAJ&hl=en&oi=sra" target="_blank">View all my publications</a></p>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025 Spotlight</div><img src='_publications/nonparametric_teaching_for_graph_proerty_learners/GCN.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
