@@ -12,7 +12,7 @@ redirect_from:
 
 # 👋😀 Hi (你好, Hallo, Bonjour, こんにちは, 안녕하세요) !
 
-<span style="text-align:justify; display: inline-block;">My research interests encompass [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory) and [nonparametric methods](https://en.wikipedia.org/wiki/Nonparametric_statistics). Following the introduction of [nonparametric teaching](https://arxiv.org/abs/2306.03007) (NT), I am deeply engaged in designing principled strategies for NT and broadening its scope of applications.</span>
+<span style="text-align:justify; display: inline-block;">My research interests encompass [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory) and [nonparametric methods](https://en.wikipedia.org/wiki/Nonparametric_statistics). Following the introduction of [nonparametric teaching](https://arxiv.org/pdf/2306.03007) (NT), I am deeply engaged in designing principled strategies for NT and broadening its scope of applications.</span>
 
 <span style="text-align:justify; display: inline-block;"> Please feel free to [Email](mailto:czhang6@connect.hku.hk) (<del>u3567831[at]connect.hku.hk</del> is discarded) me if you have any questions, feedback, or opportunities you'd like to discuss. </span>
 
