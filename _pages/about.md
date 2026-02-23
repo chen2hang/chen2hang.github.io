@@ -26,7 +26,7 @@ redirect_from:
 
 **<span style="color:royalblue">[Nonparametric Teaching of Attention Learners](../_publications/nonparametric_teaching_of_attention_learners/ICLR_2026_Paper.pdf)</span>**  
 __Chen Zhang__\*, Jianghui Wang\*, Bingyang Cheng,  Zhongtao Chen, Wendong Xu, Cong Wang, Marco Canini, Francesco Orabona, Yik-Chung Wu, Ngai Wong  
-<span style="color:red; font-style:italic;">ICLR 2026</span>
+<span style="color:red; font-style:italic;">ICLR 2026</span><br>
 [arXiv](http://arxiv.org/pdf/) | [<span style="color:orange;">project page</span>](https://chen2hang.github.io/_publications/nonparametric_teaching_of_attention_learners/attent.html) | [code](https://github.com/chen2hang/AtteNT_NonparametricTeaching) | [poster](../_publications/nonparametric_teaching_of_attention_learners/ICLR_2026_Poster.pdf) | [slides](../_publications/nonparametric_teaching_of_attention_learners/ICLR_2026_Slides.pdf) | [openreview](https://openreview.net/forum?id=ZXsHMy1hmX) | <span onclick="toggleDivAtteNT()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
 <div id="attent" style="display: none;">
 <pre>
