@@ -21,6 +21,38 @@ redirect_from:
 # 📃 First Author Publications
 <p><a href="https://scholar.google.com/citations?user=7CkE3C4AAAAJ&hl=en&oi=sra" target="_blank">View all my publications</a></p>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='_publications/ntk_guided_implicit_neural_teaching/ntk.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<span style="color:royalblue">[NTK-Guided Implicit Neural Teaching](../_publications/ntk_guided_implicit_neural_teaching/ICLR_2026_Paper.pdf)</span>**  
+__Chen Zhang__\*, Wei Zuo\*, Bingyang Cheng,  Yikun Wang, Wei-Bin Kou, Yik-Chung Wu, Ngai Wong  
+<span style="color:red; font-style:italic;">CVPR 2026</span>
+[arXiv](http://arxiv.org/pdf/) | [<span style="color:orange;">project page</span>](https://chen2hang.github.io/_publications/ntk_guided_implicit_neural_teaching/nint.html) | [code](https://github.com/chen2hang/NTK_Guided_Implicit_Neural_Teaching) | [poster](../_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Poster.pdf) | [slides](../_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Slides.pdf) | [openreview](https://openreview.net/forum?id=2qdhnnAVnX) | <span onclick="toggleDivNINT()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
+<div id="nint" style="display: none;">
+<pre>
+@inproceedings{zhang2026nint,
+  title={NTK-Guided Implicit Neural Teaching},
+  author={Zhang, Chen and Zuo, Wei and Cheng, Bingyang and Wang, Yikun and Kou, Wei-Bin and Wu, Yik-Chung and Wong, Ngai},
+  booktitle={CVPR},
+  year={2026}
+}
+</pre>
+</div>
+<script>
+function toggleDivNINT() {
+  var bibDiv = document.getElementById("nint");
+  if (bibDiv.style.display === "none") {
+    bibDiv.style.display = "block";
+  } else {
+    bibDiv.style.display = "none";
+  }
+}
+</script>
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='_publications/nonparametric_teaching_of_attention_learners/self_attention_1.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 

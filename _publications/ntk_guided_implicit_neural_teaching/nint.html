@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>NTK-Guided Implicit Neural Teaching</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chen2hang.github.io/_publications/ntk_guided_implicit_neural_teaching/"/>
+    <meta property="og:title" content="NTK-Guided Implicit Neural Teaching" />
+    <meta property="og:description" content="Project page for NTK-Guided Implicit Neural Teaching." />
+
+    <meta name="twitter:title" content="NTK-Guided Implicit Neural Teaching" />
+    <meta name="twitter:description" content="Project page for NTK-Guided Implicit Neural Teaching." />
+
+
+    <link rel="icon" type="image/png" href="/images/site_icon_hku.png">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        MathJax = {
+            tex: {
+            packages: {'[+]': ['ams']}
+            }
+        };
+    </script>
+
+    <style>
+      .theorem {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .theorem h3 {
+        margin-top: 0;
+      }
+    </style>
+
+	<style>
+	  table {
+	    width: 100%;
+	    border-collapse: collapse;
+	  }
+	  th, td {
+	    padding: 12px 15px;
+	    text-align: center;
+	    border-bottom: 1px solid #ddd;
+	  }
+	  th {
+	    background-color: #f2f2f2;
+	  }
+	  tr:nth-child(even) {
+	    background-color: #f9f9f9;
+	  }
+	  caption {
+	    font-weight: bold;
+	    margin-bottom: 10px;
+	  }
+	</style>
+
+	<style>
+	  .indented {
+	    padding-left: 20px;
+	  }
+	</style>
+	
+	<style>
+	.row_h {
+    		max-height: 0;
+    		overflow: hidden;
+	}
+	</style>
+
+	<style>
+	    .gif-container {
+	      display: flex;
+	      flex-wrap: wrap;
+	      justify-content: space-between;
+	    }
+	    .gif-container img {
+	      width: 24%;
+	      height: auto;
+	      margin-bottom: 5px;
+	    }
+	</style>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                NTK-Guided Implicit Neural Teaching</br> 
+                <small>
+                    CVPR 2026
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://chen2hang.github.io">
+                          Chen Zhang*<sup>†</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=AonK3NEAAAAJ&hl=en">
+                          Wei Zuo*
+                        </a>
+                    </li>
+                    <li>
+                        Bingyang Cheng
+                    </li>
+					<li>
+                        Yikun Wang
+                    </li>
+                    <li>
+                        Wei-Bin Kou
+                    </li>
+                    <li>
+                        <a href="https://www.eee.hku.hk/~ycwu/">
+                          Yik-Chung Wu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.eee.hku.hk/~nwong/">
+                          Ngai Wong
+                        </a>
+                    </li>
+                </ul>
+                <span style="font-size: 14px;">The University of Hong Kong</span>
+                <br>
+                * denotes equal contribution, <sup>†</sup> denotes corresponding author
+            </div>
+        </div>
+
+	<!-- -------------------- Thumbnail show --------------------  -->
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="/_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Paper.pdf">
+                            <image src="paper_thumbnail.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Poster.pdf">
+                            <image src="poster_thumbnail.png" height="60px">
+                                <h4><strong>Poster</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Slides.pdf">
+                            <image src="slides_thumbnail.png" height="60px">
+                                <h4><strong>Slides</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/chen2hang/NTK_Guided_Implicit_Neural_Teaching">
+                            <image src="github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+	<!-- -------------------- Abstract --------------------  -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+					Implicit Neural Representations (INRs) parameterize continuous signals via multilayer perceptrons (MLPs), enabling compact, resolution-independent modeling for tasks like image, audio, and 3D reconstruction. However, fitting high-resolution signals demands optimizing over millions of coordinates, incurring prohibitive computational costs. To address it, we propose NTK-Guided Implicit Neural Teaching (NINT), which accelerates training by dynamically selecting coordinates that maximize global functional updates. Leveraging the Neural Tangent Kernel (NTK), NINT scores examples by the norm of their NTK-augmented loss gradients, capturing both fitting errors and heterogeneous leverage (self-influence and cross-coordinate coupling). This dual consideration enables faster convergence compared to existing methods. Through extensive experiments, we demonstrate that NINT significantly reduces training time by nearly half while maintaining or improving representation quality, establishing state-of-the-art acceleration among recent sampling-based strategies.
+                </p>
+            </div>
+        </div>
+
+
+	<!-- -------------------- Implementations --------------------  -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Implementations
+                </h3>
+				<p class="text-justify">
+                    We provide a <b><span style="color:red;">plug-and-play</span></b> <a href="https://github.com/chen2hang/NTK_Guided_Implicit_Neural_Teaching">package</a> to generally speed up the learning efficiency of the INR.<br>
+                </p>
+            </div>
+        </div>
+
+	<!-- -------------------- Poster --------------------  -->
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Poster
+                </h3>
+				<figure>
+					<image src="CVPR_2026_Poster.png" style="display: block; margin: 0; margin-left: -60px;" height="500px">
+				</figure>
+            </div>
+        </div>
+
+	<!-- -------------------- Related links --------------------  -->
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Related links
+                </h3>
+                <p class="text-justify">
+                    Related works (for developing a deeper understanding of AtteNT) are: <br>
+            <p class="indented">[ICLR 2026] <a href="https://chen2hang.github.io/_publications/nonparametric_teaching_of_attention_learners/ICLR_2026_Paper.pdf">Nonparametric Teaching of Attention Learners</a>,</p>
+            <p class="indented">[ICML 2025 spotlight] <a href="https://arxiv.org/pdf/2505.14170">Nonparametric Teaching for Graph Property Learners</a>,</p>
+		    <p class="indented">[ICML 2024] <a href="https://arxiv.org/pdf/2405.10531v1">Nonparametric Teaching of Implicit Neural Representations</a>,</p>
+			<p class="indented">[NeurIPS 2023] <a href="https://arxiv.org/pdf/2311.10318">Nonparametric Teaching for Multiple Learners</a>,</p>
+		    <p class="indented">[ICML 2023] <a href="https://arxiv.org/pdf/2306.03007">Nonparametric Iterative Machine Teaching</a>.<br></p>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly style="width: 550px; height: 150px;">
+@inproceedings{zhang2026nint,
+  title={NTK-Guided Implicit Neural Teaching},
+  author={Zhang, Chen and Zuo, Wei and Cheng, Bingyang and Wang, Yikun and Kou, Wei-Bin and Wu, Yik-Chung and Wong, Ngai},
+  booktitle={CVPR},
+  year={2026}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgments
+                </h3>
+                <p class="text-justify">
+                We thank all anonymous reviewers for their constructive feedback, which helped improve our paper.
+                    <br>
+				This work was supported in part by the Theme-based Research Scheme (TRS) project T45-701/22-R of the Research Grants Council of Hong Kong, and in part by the AVNET-HKU Emerging Microelectronics and Ubiquitous Systems (EMUS) Lab.
+                    <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                </p>
+		
+		<p style="text-align:right"><em><big>Send feedback and questions to <a href="https://chen2hang.github.io">Chen Zhang</big></em></a></p>
+            </div>
+        </div>
+    </div>
+
+	
+	<div class="row_h">
+		<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=tj4jEufVc73n1VJfbF_o-tnhG5wHbbt5CxxmyziNdxI&cl=ffffff&w=a"></script>
+	</div>
+</body>
+</html>
