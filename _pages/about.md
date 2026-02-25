@@ -24,7 +24,7 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='_publications/ntk_guided_implicit_neural_teaching/ntk.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**<span style="color:royalblue">[NTK-Guided Implicit Neural Teaching](../_publications/ntk_guided_implicit_neural_teaching/ICLR_2026_Paper.pdf)</span>**  
+**<span style="color:royalblue">[NTK-Guided Implicit Neural Teaching](../_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Paper.pdf)</span>**  
 __Chen Zhang__\*, Wei Zuo\*, Bingyang Cheng,  Yikun Wang, Wei-Bin Kou, Yik-Chung Wu, Ngai Wong  
 <span style="color:red; font-style:italic;">CVPR 2026</span><br>
 [arXiv](http://arxiv.org/pdf/) | [<span style="color:orange;">project page</span>](https://chen2hang.github.io/_publications/ntk_guided_implicit_neural_teaching/nint.html) | [code](https://github.com/chen2hang/NTK_Guided_Implicit_Neural_Teaching) | [poster](../_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Poster.pdf) | [slides](../_publications/ntk_guided_implicit_neural_teaching/CVPR_2026_Slides.pdf) | [openreview](https://openreview.net/forum?id=2qdhnnAVnX) | <span onclick="toggleDivNINT()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
