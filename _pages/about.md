@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-# 👋😀 Hi (你好, Hallo, Bonjour, こんにちは, 안녕하세요) !
+# Hi (你好, Hallo, Bonjour, こんにちは, 안녕하세요) !
 
 <span style="text-align:justify; display: inline-block;">My research interests encompass [statistical machine learning](https://en.wikipedia.org/wiki/Statistical_learning_theory) and [nonparametric methods](https://en.wikipedia.org/wiki/Nonparametric_statistics). Following the introduction of [nonparametric teaching](https://arxiv.org/pdf/2306.03007) (NT), I am deeply engaged in designing principled strategies for NT and broadening its scope of applications.</span>
 
@@ -18,8 +18,40 @@ redirect_from:
 
 <span style="color:white"><br></span>
 
-# 📃 First Author Publications
+# First Author Publications
 <p><a href="https://scholar.google.com/citations?user=7CkE3C4AAAAJ&hl=en&oi=sra" target="_blank">View all my publications</a></p>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sci4DL @ ICLR 2026</div><img src='_publications/NZK/NZK_visual.png' alt="sym"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**<span style="color:royalblue">[Model Evolution Under Zeroth-Order Optimization: A Neural Tangent Kernel Perspective](../_publications/NZK/ICLR_2026_Sci4DL_Paper)</span>**  
+__Chen Zhang__\*, Yuxin Cheng\*, Chenchen Ding, Shuqi Wang, Jingreng Lei, Runsheng Yu, Yik-Chung Wu, Ngai Wong  
+<span style="color:red; font-style:italic;">ICLR 2026 Sci4DL Workshop</span><br>
+[code](https://github.com/chen2hang/NZK) | [poster](../_publications/NZK/ICLR_2026_Sci4DL_Poster.pdf) | [openreview](https://openreview.net/forum?id=PCJGU7DEEX) | <span onclick="toggleDivNZK()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
+<div id="nzk" style="display: none;">
+<pre>
+@inproceedings{zhang2026model,
+  title={Model Evolution Under Zeroth-Order Optimization: A Neural Tangent Kernel Perspective},
+  author={Chen Zhang and Yuxin Cheng and Chenchen Ding and Shuqi Wang and Jingreng Lei and Runsheng Yu and Yik-Chung WU and Ngai Wong},
+  booktitle={ICLR Workshop on Scientific Methods for Understanding Deep Learning},
+  year={2026}
+}
+</pre>
+</div>
+<script>
+function toggleDivNZK() {
+  var bibDiv = document.getElementById("nzk");
+  if (bibDiv.style.display === "none") {
+    bibDiv.style.display = "block";
+  } else {
+    bibDiv.style.display = "none";
+  }
+}
+</script>
+
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='_publications/ntk_guided_implicit_neural_teaching/ntk.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -183,7 +215,7 @@ function toggleBibNeurips2023() {
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2023</div><img src='_publications/nonparametric_iterative_machine_teaching/comp.png' alt="sym"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2023</div><img src='_publications/nonparametric_iterative_machine_teaching/Nonparametric_teaching.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<span style="color:royalblue">[Nonparametric Iterative Machine Teaching](../_publications/nonparametric_iterative_machine_teaching/ICML_2023_Paper.pdf)</span>**  
@@ -216,7 +248,7 @@ function toggleBibIcml2023() {
 
 
 
-# 🏆 Honors
+# Honors
 
 - HKU PGS	[Apr 2024]  
 - The National Scholarship (Twice) 	[Nov 2016/ Nov 2018]  
@@ -225,9 +257,9 @@ function toggleBibIcml2023() {
 
 <span style="color:white"><br></span>
 
-# 🖊 Miscellaneous
+# Miscellaneous
 
-<span style="text-align:justify; display: inline-block;"> Currently, I am pursuing the Ph.D. degree in the department of [electrical and electronic engineering](https://www.eee.hku.hk/) from [the University of Hong Kong (HKU)](https://www.hku.hk/), under the supervision of [Prof. Yik-Chung Wu](https://www.eee.hku.hk/~ycwu/) and [Prof. Ngai Wong](https://www.eee.hku.hk/~nwong/). I obtained a Master's degree in the department of [Statistics & Actuarial Science from HKU](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics. Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (China)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.</span>
+<span style="text-align:justify; display: inline-block;"> Currently, I am pursuing the Ph.D. degree in the department of [electrical and computer engineering](https://www.eee.hku.hk/) from [the University of Hong Kong (HKU)](https://www.hku.hk/), under the supervision of [Prof. Yik-Chung Wu](https://www.eee.hku.hk/~ycwu/) and [Prof. Ngai Wong](https://www.eee.hku.hk/~nwong/). I obtained a Master's degree in the department of [Statistics & Actuarial Science from HKU](https://saasweb.hku.hk/), where I gained a solid foundation in statistical theory and methodology. In addition, I have gained practical experience through internships at [Midea Group](https://www.midea.com/cn/Our-Businesses/Digital-Innovation) and [Tencent](https://www.tencent.com/zh-cn/index.html), where I worked on projects related to data development, data analysis, and business analytics. Before pursuing graduate studies, I completed my undergraduate education in Applied Statistics at [Northeastern University (China)](https://stxy.neuq.edu.cn/), where I received rigorous training in mathematics, statistical theory and data analysis.</span>
 
 <span style="text-align:justify; display: inline-block;">I am always passionate about applying statistical and machine learning techniques to real-world problems and contributing to the advancement of artificial intelligence and statistics. I firmly believe that [hard work will always pay off](https://en.wikipedia.org/wiki/Achievement_ideology), and as long as we keep moving forward, we will eventually see the light at the end of the tunnel.</span>
 
