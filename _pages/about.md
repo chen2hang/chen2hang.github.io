@@ -26,7 +26,7 @@ redirect_from:
 
 **<span style="color:royalblue">[Model Evolution Under Zeroth-Order Optimization: A Neural Tangent Kernel Perspective](../_publications/NZK/ICLR_2026_Sci4DL_Paper)</span>**  
 __Chen Zhang__\*, Yuxin Cheng\*, Chenchen Ding, Shuqi Wang, Jingreng Lei, Runsheng Yu, Yik-Chung Wu, Ngai Wong  
-<span style="color:red; font-style:italic;">ICLR 2026 Sci4DL Workshop</span><br>
+<span style="color:red; font-style:italic;">ICLR 2026 Workshop on Scientific Methods for Understanding Deep Learning</span><br>
 [code](https://github.com/chen2hang/NZK) | [poster](../_publications/NZK/ICLR_2026_Sci4DL_Poster.pdf) | [openreview](https://openreview.net/forum?id=PCJGU7DEEX) | <span onclick="toggleDivNZK()" style="color: #52adc8; text-decoration: underline; cursor: pointer;">bib</span>  
 <div id="nzk" style="display: none;">
 <pre>
