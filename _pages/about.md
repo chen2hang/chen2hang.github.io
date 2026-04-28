@@ -21,7 +21,7 @@ redirect_from:
 # First Author Publications
 <p><a href="https://scholar.google.com/citations?user=7CkE3C4AAAAJ&hl=en&oi=sra" target="_blank">View all my publications</a></p>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sci4DL @ ICLR 2026</div><img src='_publications/NZK/NZK_visual.png' alt="sym"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sci4DL @ ICLR 2026</div><img src='_publications/NZK/NZK_visual.png' alt="sym"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **<span style="color:royalblue">[Model Evolution Under Zeroth-Order Optimization: A Neural Tangent Kernel Perspective](../_publications/NZK/ICLR_2026_Sci4DL_Paper)</span>**  
@@ -50,7 +50,7 @@ function toggleDivNZK() {
 </script>
 
 </div>
-</div>
+</div> -->
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='_publications/ntk_guided_implicit_neural_teaching/ntk.png' alt="sym"></div></div>
